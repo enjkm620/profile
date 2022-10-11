@@ -8,15 +8,15 @@
 
 //컬러시스템
 $pri-color-1 : #2C3E50;
-$pri-color-2 : #52B3D9;
+$pri-color-2 : #9578d2;
 $pri-color-3 : #ffffff;
 
-$sec-color-1 : #68C3A3;
+$sec-color-1 : #e6aad9;
 $sec-color-2 : #333333;
 $sec-color-3 : #eeeeee;
 
-$point-color-1 : #ffc90e;
-$point-color-2 : #fcf8e3;
+$point-color-1 : #c2bbe5;
+$point-color-2 : #fbe7f9;
 
 
 //변수선언
@@ -92,7 +92,7 @@ $mobile : "screen and (max-width:640px)";
     height: 100%;
 
     background-color: #222;
-    opacity: 0.6;
+    opacity: 0.7;
     //background-color: rgba(22,22,22,0.6);
 
     content: '';
@@ -115,6 +115,7 @@ $mobile : "screen and (max-width:640px)";
       color: $pri-color-2;
       font-size: $solgan;
       line-height: 80px;
+      letter-spacing: 5px;
 
     
       @media #{$mobile}{

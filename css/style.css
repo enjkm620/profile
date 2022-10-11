@@ -81,7 +81,7 @@
   width: 100%;
   height: 100%;
   background-color: #222;
-  opacity: 0.6;
+  opacity: 0.7;
   content: "";
 }
 #home > .intro {
@@ -99,9 +99,10 @@
 }
 #home > .intro > h2 {
   margin-bottom: 24px;
-  color: #52B3D9;
+  color: #9578d2;
   font-size: 60px;
   line-height: 80px;
+  letter-spacing: 5px;
 }
 @media screen and (max-width:640px) {
   #home > .intro > h2 {
@@ -110,7 +111,7 @@
   }
 }
 #home > .intro > h2 > span {
-  color: #68C3A3;
+  color: #e6aad9;
 }
 @media screen and (max-width:640px) {
   #home > .intro > h2 > span {
@@ -147,7 +148,7 @@
   transition: all 0.4s;
 }
 #home > .intro > .myico > span:hover {
-  background-color: #52B3D9;
+  background-color: #9578d2;
   border-color: transparent;
   cursor: pointer;
 }
@@ -348,7 +349,7 @@ header > .container > nav > .gnb > li > a {
   }
 }
 header > .container > nav > .gnb > li.on > a, header > .container > nav > .gnb > li:hover > a {
-  color: #52B3D9;
+  color: #9578d2;
 }
 
 header ~ section {
@@ -477,7 +478,7 @@ section#aboutme > .container > .biography > .detail > p {
   }
 }
 section#aboutme > .container > .biography > .detail > p > mark {
-  background-color: #fcf8e3;
+  background-color: #fbe7f9;
 }
 section#aboutme > .container > .biography > .detail > .ican {
   display: flex;
@@ -497,7 +498,7 @@ section#aboutme > .container > .biography > .detail > .ican > li {
 }
 section#aboutme > .container > .biography > .detail > .ican > li:before {
   margin-right: 10px;
-  color: #52B3D9;
+  color: #9578d2;
   font-family: "Font Awesome 5 Free";
   content: "\f14a";
 }
@@ -592,7 +593,7 @@ section#aboutme > .workstyle > .container > ol > li {
   }
 }
 section#aboutme > .workstyle > .container > ol > li > span {
-  color: #ffc90e;
+  color: #c2bbe5;
   font-weight: 400;
 }
 section#aboutme > .talk {
@@ -653,7 +654,7 @@ section#aboutme > .talk > ul > li > h4 {
   letter-spacing: 3px;
   /*자동줄바꿈 안됨*/
   white-space: nowrap;
-  background-color: #52B3D9;
+  background-color: #9578d2;
 }
 @media screen and (max-width:640px) {
   section#aboutme > .talk > ul > li > h4 {
@@ -868,7 +869,7 @@ section#ability > .ability-container > .stick > .stick-container > .item .progre
   height: 100%;
   /* width: 100px; js에서 동적으로 할당 */
   width: 0;
-  background-color: #52B3D9;
+  background-color: #9578d2;
   transition: all 2s ease-in-out;
 }
 section#ability > .ability-container > .stick > .stick-container > .item .progress .bar > span {
@@ -914,7 +915,7 @@ section#ability > .ability-container > .piechart > .item > .chart > .percent:aft
 }
 section#ability > .ability-container > .piechart > .item > .chart > .tit {
   height: 60px;
-  color: #fcf8e3;
+  color: #fbe7f9;
   font-weight: 500;
   font-size: 18px;
   line-height: 60px;
@@ -991,7 +992,7 @@ section#ability > .resume > div > .iam > a {
   }
 }
 section#ability > .resume > div > .iam > a:hover {
-  background-color: #52B3D9;
+  background-color: #9578d2;
 }
 section#ability > .resume > div > .iam > .shadow {
   display: none;
@@ -1267,7 +1268,7 @@ section#uxdesign > .uxui > h3:before, section#uxdesign > .uxui > h3:after {
   display: block;
   position: absolute;
   top: 130px;
-  color: #52B3D9;
+  color: #9578d2;
   font-size: 36px;
   font-weight: 800;
   transition: ease-out 0.3s;
@@ -1510,7 +1511,7 @@ section#portfolio > .slides > .slides-pagination > li > a {
 }
 section#portfolio > .slides > .slides-pagination > li.on > a, section#portfolio > .slides > .slides-pagination > li:hover > a {
   color: #fff;
-  background-color: #52B3D9;
+  background-color: #9578d2;
 }
 section#portfolio > .slides > .slides-container {
   overflow: hidden;
@@ -1612,7 +1613,7 @@ section#portfolio > .slides > .slides-container > figure > figcaption > .btn > a
 }
 section#portfolio > .slides > .slides-container > figure > figcaption > .btn > a:hover {
   color: #fff;
-  background-color: #68C3A3;
+  background-color: #e6aad9;
 }
 section#portfolio > .slides > .slides-container > figure > figcaption > .shadow {
   display: none;
@@ -1823,7 +1824,7 @@ section#portfolio > .intro .container > .coding > h4 > .circle {
 }
 section#portfolio > .intro .container > .coding > h4 > .circle > .ring {
   position: absolute;
-  border: 2px solid #52B3D9;
+  border: 2px solid #9578d2;
   border-radius: 200px;
 }
 section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_1 {
@@ -1933,7 +1934,7 @@ section#portfolio > .intro .container > .coding > div > .circle {
 }
 section#portfolio > .intro .container > .coding > div > .circle > .ring {
   position: absolute;
-  border: 2px solid #52B3D9;
+  border: 2px solid #9578d2;
   border-radius: 200px;
 }
 section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_1 {
@@ -2045,7 +2046,7 @@ section#portfolio > .works > .work-list > li > h4 + p {
 }
 section#portfolio > .works > .work-list > li > h4 + p > .tip {
   display: block;
-  color: #68C3A3;
+  color: #e6aad9;
   padding-top: 20px;
   font-weight: 600;
   text-align: center;
@@ -2059,7 +2060,7 @@ section#portfolio > .works > .work-list > li > .btnShow {
   font-size: 18px;
   line-height: 46px;
   text-align: center;
-  background-color: #52B3D9;
+  background-color: #9578d2;
   border-radius: 5px;
   box-shadow: inset 0 0 0 0 #454249;
   transition: ease-out 0.3s;
@@ -2169,7 +2170,7 @@ section#contact > .apply > .help > p {
   }
 }
 section#contact > .apply > dl > dt.on {
-  background-color: #68C3A3;
+  background-color: #e6aad9;
 }
 section#contact > .apply > dl > dt.on > a > span.arr {
   background-image: url(./../images/contact/after_up.png);
@@ -2326,7 +2327,7 @@ aside > a {
   height: 28px;
   line-height: 28px;
   text-align: center;
-  background-color: #52B3D9;
+  background-color: #9578d2;
 }
 aside > a > i {
   color: #fff;
