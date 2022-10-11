@@ -102,6 +102,7 @@
   color: #9578d2;
   font-size: 60px;
   line-height: 80px;
+  letter-spacing: 5px;
 }
 @media screen and (max-width:640px) {
   #home > .intro > h2 {
@@ -477,7 +478,7 @@ section#aboutme > .container > .biography > .detail > p {
   }
 }
 section#aboutme > .container > .biography > .detail > p > mark {
-  background-color: #fcf8e3;
+  background-color: #fbe7f9;
 }
 section#aboutme > .container > .biography > .detail > .ican {
   display: flex;
@@ -592,7 +593,7 @@ section#aboutme > .workstyle > .container > ol > li {
   }
 }
 section#aboutme > .workstyle > .container > ol > li > span {
-  color: #ffc90e;
+  color: #c2bbe5;
   font-weight: 400;
 }
 section#aboutme > .talk {
@@ -914,7 +915,7 @@ section#ability > .ability-container > .piechart > .item > .chart > .percent:aft
 }
 section#ability > .ability-container > .piechart > .item > .chart > .tit {
   height: 60px;
-  color: #fcf8e3;
+  color: #fbe7f9;
   font-weight: 500;
   font-size: 18px;
   line-height: 60px;
