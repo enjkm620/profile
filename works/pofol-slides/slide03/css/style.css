@@ -1,0 +1,197 @@
+﻿@charset "utf-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: 'RixInooAriDuriR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{font-family: 'Noto Sans KR';}
+
+
+/* 헤더 */
+
+
+header>.top-mnu{
+    line-height: 40px;
+    background-color: #eee;
+}
+
+header>.top-mnu>.biz{
+    position: relative;
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+header>.top-mnu>.biz>a{
+    color: #666;
+    font-size: 11px;
+}
+
+header>.top-mnu>.biz>a>span{
+    position: absolute;
+    left: 111px;
+    top: 3px;
+}
+
+header>.logo{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header>.logo>h1>a{
+    height: 100px;
+    margin: 0 auto;
+
+    font-family: 'RixInooAriDuriR';
+    font-size: 40px;
+    line-height: 110px;
+    letter-spacing: 3px;
+}
+
+header>nav{
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+header>nav>.gnb{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>nav>.gnb>li:hover>a{color: #f00;}
+
+header>nav>.gnb>li>a{
+    display: block;
+    height: 50px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+/* 슬라이드 */
+
+.slides{
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 600px;
+}
+
+.slides>.slides-container{
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 600%;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.slides>.slides-container>p{
+    width: 20%;
+    background-position: center center;
+}
+
+.slides>.slides-container>p:nth-child(1){background-image: url(./../images/main1.jpg);}
+.slides>.slides-container>p:nth-child(2){background-image: url(./../images/main2.jpg);}
+.slides>.slides-container>p:nth-child(3){background-image: url(./../images/main3.gif);}
+.slides>.slides-container>p:nth-child(4){background-image: url(./../images/main4.jpg);}
+.slides>.slides-container>p:nth-child(5){background-image: url(./../images/main5.jpg);}
+.slides>.slides-container>p:nth-child(6){background-image: url(./../images/main6.jpg);}
+
+.slides>.slides-container>p>a{
+    display: block;
+    height: 600px;
+    text-indent: -9999px;
+}
+
+
+/* 페이지 버튼 */
+
+.slides>.slides-pagination{
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -55px;
+}
+
+.slides>.slides-pagination>li{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.slides>.slides-pagination>li:last-child{margin-right: 0;}
+
+.slides>.slides-pagination>li.on,
+.slides>.slides-pagination>li:hover{opacity: 1;}
+
+.slides>.slides-pagination>li>a{
+    display: block;
+    text-indent: -9999px;
+}
+
+
+/* 이전 다음 */
+
+.slides>.slides-navigation{
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 70px;
+    margin-top: -35px;
+    background-image: url(./../images/sp_icon.png);
+    text-indent: -9999px;
+}
+
+.slides>.slides-navigation.prev{background-position: 0 -110px; left: 30px;}
+
+.slides>.slides-navigation.next{background-position: -50px -110px; right: 30px;}
+
+
+/* 자동재생 정지 */
+
+.slides>.slides-auto{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-image: url(./../images/sp_btn.png);
+    text-indent: -9999px;
+}
+
+.slides>.slides-auto{background-position: 0 -57px;}
+.slides>.slides-auto.pause{background-position: -62px -24px;}
+
+
+
+address{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}

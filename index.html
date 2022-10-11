@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김은지 포트폴리오</title>
+  <meta name="Subject" content="포트폴리오 작품">
+  <meta name="Title" content="김은지 포트폴리오">
+  <meta name="Keywords" content="퍼블리셔,웹디자이너,웹표준,웹프로그래밍,포트폴리오,프론트엔드,개발자">
+  <meta name="Description" content="원하는 것을 실현하는 웹퍼플리셔">
+  <meta name="Author" content="김은지">
+  <meta name="Publisher" content="김은지">
+  <meta name="Classification" content="포트폴리오">
+
+  <!--카테고리 분류-->
+  <meta name="Location" content="Seoul Korea">
+  <meta name="Author-Date" content="2022.05.13">
+  <meta name="Copyright" content="안경민">
+
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/jquery.easypiechart.js"></script>  
+    <script src="js/wow.min.js"></script>
+  <script defer src="./js/function.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <div class="loading">
+      <p>로딩중</p>
+    </div>
+
+    <h1>Kim Eun Ji</h1>
+    <section id="home">
+      <div class="intro">
+        <h2>CREATIVE <span>PUBLISHER</span></h2>
+        <p>
+          원하는 것을 실현하는 <span>웹퍼블리셔 김은지 입니다.</span> <br />
+          사용자의 경험을 중시한 UX를 <span>고려해 페이지를 디자인하며,</span> <br />
+          설계부터 탄탄한 시멘틱 구조와 <span>감각적인 디자인을 추구합니다.</span>
+        </p>
+
+        <div class="myico">
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-twitter"></i></span>
+          <span><i class="fab fa-youtube"></i></span>
+          <span><i class="fab fa-google-plus-g"></i></span>
+          <span><i class="fab fa-android"></i></span>
+        </div>
+      </div>
+
+      <div class="mouse">
+        <p class="wheel">스크롤바를 내리면 작품을 감상할 수 있습니다.</p>
+      </div>
+
+      <figure class="bgmov">
+        <!-- playsinline 아이폰에서는 자체 동영상 플레이어로 넘어가는 현상을 방지하는 코드 -->
+        <video playsinline autoplay loop muted>
+            <source src="./images/intro.mp4" type="video/mp4" />
+        </video>
+        <figcaption class="sr-only">나의하루</figcaption>
+	  </figure>      
+    </section>
+
+    <hr />
+
+    <header>
+      <div class="container">
+        <h2><a href="#" class="logo">PORTFOLIO</a></h2>
+
+        <button type="button" class="btn-gnb">메뉴보기</button>
+
+        <nav>
+          <ul class="gnb">
+            <li class="on"><a href="#">ABOUT-ME</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">ABILITY</a></li>
+            <li><a href="#">UX-DESIGN</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+
+    <section id="aboutme">
+      <h2 class="wow fadeInUp">ABOUT ME</h2>
+
+      <div class="container">
+        <article class="profile">
+          <div>
+            <h3 class="myphoto">
+              <img src="./images/aboutme/visual.jpg" alt="안경민">
+            </h3>
+
+            <ol>
+              <li><strong>Name :</strong> 김은지</li>
+              <li><strong>Birth :</strong> 1992. 06. 20</li>
+              <li><strong>Address :</strong> 서울시 양천구</li>
+              <li><strong>Phone :</strong> 010-8764-1226</li>
+              <li><strong>Email :</strong> enjkm62@gmail.com</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="biography">
+
+          <div class="detail">
+            <h3 class="wow fadeInUp">VISION</h3>
+            <p>
+                새로운 것을 탐험하는 것을 좋아하는 저는 트렌드가 빠르게 변하고 <br />
+                새로운 기술이 끊임없이 등장하는 웹디자인 분야를 즐겁게 공부하고 있습니다.
+            </p>
+            <p>
+                1px 차이로도 완성도가 다르게 느껴지는 것이 UI디자인이라 생각합니다. <br />
+                작은 디테일의 차이를 아는 UI/UX 디자이너가 되고 싶습니다.
+            </p>
+            <p>
+                그래서 꾸준하게 공부하며 한걸음 한걸음 더 나아가고자 매일 노력하고 있습니다. 
+            </p>
+          </div>
+
+          <div class="detail">
+            <h3 class="wow fadeInUp">WHAT CAN I DO?</h3>
+            <p>
+              사용자가 보기 편안하되, 세련된 스타일을 유지하는 것이 제가 추구하는 UI입니다. <br />
+              HTML5 & CSS3 시멘틱 페이지를 <mark>ZenCoding(EMMET), SCSS</mark>로 코딩할 수 있습니다.
+            </p>
+            <p>
+                남다른 꼼꼼함으로 놓치기 쉬운 디테일까지 캐치하고<br />
+                실수가 생기지 않도록 두 번, 세 번 검토하는 편입니다.
+                
+            </p>
+            <p>
+              JS 플러그인을 사용에 그치지 않고 필요한 기능을 직접 구현할 수 있는 <mark>Javascript/jQuery/React 로직구현</mark>이 가능합니다. <br />
+              새로운 기술과 트렌드를 끊임없이 탐구하고 공부합니다.
+            </p>
+
+            <ul class="ican">
+              <li>ZenCoding(EMMET) & SCSS</li>
+              <li>Javascript & jQuery & React 로직구현</li>
+              <li>MVC 패턴의 페이지 구성</li>
+              <li>RWD 반응형 웹디자인</li>
+              <li>HTML5 DTD 유효성 검사 통과</li>
+              <li>웹접근성을 향상시킨 시멘틱 페이지</li>
+            </ul>
+          </div>
+
+        </article>
+      </div>
+
+      <hr />
+
+      <article class="workstyle">
+        <div class="container">
+            <h3 class="sr-only">WORK STYLE</h3>				
+            <ol>
+                <li>구조와 디자인, 기능을 분리한 <span>MVC패턴</span>을 구현</li>
+                <li><span>자바스크립트</span>와 <span>jQuery / React</span>를 구현</li>
+                <li><span>HTML5</span> 시멘틱과 <span>CSS3</span> 웹페이지를 구현</li>
+            </ol>
+        </div>
+      </article>
+
+      <hr />
+
+      <article class="talk">
+          <h3 class="wow fadeInUp">다른 사람이 말하는 나</h3>
+          <ul>
+              <li>
+                  <h4>하나</h4>
+                  <strong>항상 주변 상황을 살피고 배려하는 사람</strong>
+                  <p>
+                    주변에서 일어나고 있는 일을 세밀하게 파악하고 있으며 도움이 필요하면 먼저 손길을 건네주는 사람입니다. 다양한 의견이 오고 갈 때도 모두의 이야기를 들어보려고 노력하며 중심에서 정리를 도맡아서 중재해주는 역할까지 하는 멋진 친구!
+                  </p>
+              </li>
+              <li>
+                  <h4>윤정</h4>
+                  <strong>어떤 일이든 성실하게 임하고 끈기로 대처하는 사람</strong>
+                  <p>
+                    늘 주어진 일에 성실하게 임하며 맡은 바에 책임감을 가지고 최선을 다하는 친구입니다. 간혹 일이 잘 풀리지 않아도 거기서 포기하지 않고 끈기있게 노력해서 결국 해내는 모습에 박수를 보내게 됩니다.
+                  </p>
+              </li>
+              <li>
+                  <h4>민선</h4>
+                  <strong>타고난 센스와 아이디어가 넘치는 친구</strong>
+                  <p>
+                    언제나 타고난 센스로 주위를 놀라게 만드는 친구, 아이디어가 넘쳐서 새로운 것을 구상해야 할 때 도움을 청하면 가장 먼저 답을 해주곤 합니다. 타고난 센스 뿐만 아니라 자신의 역량을 쌓아가는 모습에 감탄하고 응원하게 되는 친구입니다. 
+                  </p>
+              </li>
+          </ul>
+      </article>
+
+    </section>
+
+    <hr />
+
+    <section id="skill">
+      <h2 class="wow fadeInUp">SKILL</h2>
+
+
+      <article class="skill-1">
+        <h3>탁월한 UX분석능력과 <span>Emmet/Zencoding 활용</span></h3>
+
+        <ol>
+          <li>
+            <h4>UX/UI 디자인 </h4>
+            <p>
+                사용자의 Context와 Needs를 파악하고 <br />
+                Problem을 해결할 수 있는 Insight 도출
+            </p>             
+          </li>
+
+          <li>
+            <h4>반응형 웹표준</h4>
+            <p>
+                시멘틱을 지향하는 HTML/CSS 작성능력 보유, <br />
+                자바스크립트와 제이쿼리 기반의 로직 구현 가능 
+            </p>      
+          </li>
+        </ol>
+      </article>
+
+      <hr />
+
+      <article class="skill-2">
+          <h3>SASS 전처리기와 <span>리액트 라이브러리 활용</span></h3>
+
+          <ol>
+            <li>
+              <h4>Sass Preprocessor</h4>
+              <p>
+                  협업 웹코딩의 필수 기술인 SCSS를 이용한 <br />
+                  CSS 스타일링을 원활이 사용할 수 있습니다.
+              </p>              
+            </li>
+
+            <li>
+              <h4>리액트 라이브러리</h4>
+              <p>
+                  국내 프론트엔드 시장의 대세 리액트 코드구현, <br />
+                  자바스크립트와 제이쿼리 기반의 로직구현 가능
+              </p>    
+            </li>
+          </ol>
+      </article>      
+    </section>
+
+    <hr />
+
+    <section id="ability">
+      <h2 class="wow fadeInUp">ABILITY</h2>
+
+      <div class="ability-container">
+        <article class="stick">
+            <div class="stick-container">
+                <div class="item">
+                    <h3>젠코딩</h3>
+                    
+                    <!-- 사용자 정의 속성은 "data-속성명"으로 정의한다. -->
+                    
+                    <div class="progress" data-bar="95">
+                        <p class="bar"><span>95%</span></p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <h3>HTML5</h3>
+                    <div class="progress" data-bar="98">
+                        <p class="bar"><span>98%</span></p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <h3>CSS</h3>
+                    <div class="progress" data-bar="99">
+                        <p class="bar"><span>99%</span></p>
+                    </div>
+                </div>
+            </div><!--end of .stick-container-->
+            <div class="stick-container">
+                <div class="item">
+                    <h3>jQuery</h3>
+                    <div class="progress" data-bar="97">
+                        <p class="bar"><span>97%</span></p>
+                    </div>
+                </div>	
+  
+                <div class="item">
+                    <h3>웹기획</h3>
+                    <div class="progress" data-bar="90">
+                        <p class="bar"><span>90%</span></p>
+                    </div>
+                </div>	
+                        
+                <div class="item">
+                    <h3>디자인</h3>
+                    <div class="progress" data-bar="98">
+                        <p class="bar"><span>98%</span></p>
+                    </div>
+                </div>	
+            </div>
+        </article><!--end of .stick-->
+        
+        <article class="piechart">
+            <div class="item">
+                <div class="chart" data-percent="95">
+                    <span class="percent">95%</span>
+                    <h3 class="tit">리더쉽</h3>
+                </div>
+            </div>
+            
+            <div class="item">
+               <div class="chart" data-percent="92">
+                  <span class="percent"></span>
+                  <h3 class="tit">적극성</h3>
+               </div>
+            </div>
+            <div class="item">
+               <div class="chart" data-percent="95">
+                  <span class="percent"></span>
+                  <h3 class="tit">독창성</h3>
+               </div>
+            </div>
+            <div class="item">
+               <div class="chart" data-percent="98">
+                  <span class="percent"></span>
+                  <h3 class="tit">꼼꼼함</h3>
+               </div>
+            </div>
+            <div class="item">
+               <div class="chart" data-percent="99">
+                  <span class="percent"></span>
+                  <h3 class="tit">책임감</h3>
+               </div>
+            </div>
+            <div class="item">
+               <div class="chart" data-percent="99">
+                  <span class="percent"></span>
+                  <h3 class="tit">성실함</h3>
+               </div>
+            </div>
+        </article><!-- end of .piechart --> 
+      </div>
+
+      <article class="resume">
+        <h3 class="sr-only">온라인 이력서</h3>
+        <div>
+            <span class="frame">
+                <img src="./images/skill/itsme.png" alt="#">
+            </span>
+
+            <div class="iam">
+                <p>
+                    사용자가 보기 편안하되, 세련된 스타일을 유지하는 것이 
+                    <span>제가 추구하는 UI입니다.</span><br />
+            
+                    
+                    HTML5 & CSS3 시멘틱 페이지를 ZenCoding(EMMET)으로 코딩할 수 있습니다. <br />
+                    남다른 꼼꼼함으로 놓치기 쉬운 디테일까지 캐치하고 실수가 생기지 않도록
+                    <span>두 번, 세 번 검토하는 편입니다.</span> <br />
+                    
+                    JS 플러그인을 사용에 그치지 않고 필요한 기능을 직접 구현할 수 있는 <span>Javascript/jQuery 로직구현이 가능합니다.</span><br />
+                    새로운 기술과 트렌드를 끊임없이 탐구하고 공부합니다.
+                </p>
+
+                <a href="#">온라인 이력서 보기</a>
+
+                <p class="shadow">
+                    <span class="lightbox">
+                        <img src="./images/skill/resume.png" alt="#">
+                        <!-- <img src="./images/skill/resume.jpg" alt="#"> -->
+                        <!-- <img src="./images/skill/resume.png" alt="#"> -->
+                    </span>
+                    <button class="clse">닫기</button>
+                </p>
+
+            </div>
+        </div>
+      </article>
+    </section>
+
+    <hr />
+
+    <section id="uxdesign"> 
+      <h2 class="wow fadeInUp">UX DESIGN</h2>
+      
+      <article class="slides">
+          <h3 class="sr-only">작품리스트</h3>
+          <ul class="slides-container">
+              <li class="banner_1">UX & UI</li>
+              <li class="banner_2">UX Process</li>
+              <li class="banner_3">UX Design</li>
+              <li class="banner_4">Prototype</li>
+          </ul>
+
+          <ol class="slides-pagination">
+              <li class="on"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+          </ol>
+
+          <a href="#" class="prev">이전</a>
+          <a href="#" class="next">다음</a>
+
+      </article>
+
+      <hr />
+
+      <article class="intro">
+          <h3>내가 생각하는 사용자경험 <span>-</span> User Experience</h3>
+
+          <p>
+              <span>
+                UI 디자인을 하기 위해서는 UX 분석은 필수적입니다. <br />
+                그렇다면 UX는 뭘까요? 저는 사용자가 느끼는 모든 것이라고 생각합니다.  <br />
+              </span>
+              
+              <strong>
+                커피전문점을 예로 들면 사용자가 마시는 음료 뿐만 아니라
+                매장의 분위기, 가구, 청결도, 음악, 향기, 온도, 직원의 친절도, 주변 손님들까지 이용자가 느끼고 경험하는 모든 것이 UX라고 볼 수 있습니다.<br /> <br /> 
+              </strong>     
+              그렇기 때문에 UX 디자인이란 사용자가 어떻게 느끼는지를 고려해서 디자인하는 것이라고 할 수 있습니다.<br />
+              사소한 디테일이지만 사용자의 마음을 움직이게 할 수 있다는 것이죠.
+          </p>
+
+          <hr />
+
+          <div class="bus-alarm">
+              <h4>글자보다 직관적인 그림으로 만든 안내스티커</h4>
+              <p class="frame"><img src="./images/uxdesign/pull-push.png" alt="#"></p>
+          </div>
+
+      </article>
+      
+      <hr />
+
+      <article class="uxui">
+          <h3 class="wow fadeInUp">디자인과 UX의 차이</h3>
+          <div class="container">
+            <div class="uxui-case">
+                <dl>
+                    <dt>1. 화분</dt>
+                    <dd>
+                        내용물을 다 사용한 통조림 캔을 <br />
+                        화분으로 사용하는 사례
+                    </dd>
+                </dl>
+                <span class="ui-frame">
+                  <img src="./images/uxdesign/uiux-1.jpg" alt="발을 씻자">
+                </span>
+                <span class="ux-frame">
+                  <img src="./images/uxdesign/uiux-2.jpg" alt="다육식물 화분으로 업사이클링(Upcycling)한 사례">
+                </span>
+            </div>
+            
+            <div class="uxui-case">
+                <dl>
+                    <dt>2. 무지개 식판</dt>
+                    <dd>
+                        양을 조절할 수 있도록 선을 그어 <br />
+                        잔반을 줄이는 데 도움을 준 사례
+                    </dd>
+                </dl>
+                <span class="ui-frame">
+                  <img src="./images/uxdesign/uiux-3.jpg" alt="물티슈 보호 캡">
+                </span>
+                <span class="ux-frame">
+                  <img src="./images/uxdesign/uiux-4.jpg" alt="오염, 수분증발을 방지하는 물티슈 보호 캡을 콘센트 보호 덮개로 활용한 사례">
+                </span>
+            </div>
+
+          </div>
+      </article>
+
+    </section>
+
+    <hr />
+
+    <section id="portfolio">  
+      <h2 class="wow fadeInUp">PORTFOLIO</h2>
+
+      <article class="slides">
+          <ul class="slides-pagination">
+              <li class="on"><a href="#">경복궁 생과방</a></li>
+              <li><a href="#">서울식물원</a></li>
+              <li><a href="#">폴인</a></li>
+              <li><a href="#">네번째포폴</a></li>
+          </ul>
+          
+          <div class="slides-container">
+              <figure>
+                  <figcaption>
+                      <h3>경복궁 생과방 (리뉴얼 디자인)</h3>
+                      <p class="tip">SAENG GWA BANG Renewal Design</p>
+                      <p class="desc">
+                          경복궁 생과방의 이미지를 살려 리뉴얼 디자인하였습니다. <br />
+                          동적인 분위기를 더하기 위해 비주얼 슬라이드를 추가하고, <br />
+                          메인 페이지에서 전체 음료와 디저트 메뉴를 볼 수 있도록 수정했습니다. <br />                                
+                      </p>
+                      <p class="tools"><span>작업프로그램</span> : Photoshop, Visual Studio Code</p>
+                      <p class="etc"><span>작업기여도</span> : 100% 개인 작업</p>
+                      <p class="btn">
+                          <a href="#" class="proc">작업과정</a>
+                          <a href="./works/pofol01/index.html" target="_blank">사이트보기</a>
+                      </p>
+
+                      <p class="shadow">
+                          <span class="lightbox">
+                              <img src="./images/portfolio/process-01.jpg" alt="#">
+                          </span>
+                          <button class="clse">닫기</button>
+                      </p>
+
+                  </figcaption>
+                  <div class="frame">
+                      <img src="./images/portfolio/pofol-01.jpg" alt="생과방">
+                  </div>
+              </figure>
+              <figure>
+                  <figcaption>
+                      <h3>서울식물원 (리뉴얼 디자인)</h3>
+                      <p class="tip">ISAAC TOAST Renewal Design</p>
+                      <p class="desc">
+                          기존 서울식물원 홈페이지 메인페이지를 리뉴얼 디자인하였습니다. <br />
+                          서울식물원의 분위기를 담기 위해 생동감 넘치는 이미지로 비주얼 영역을 구현했고,<br />
+                          메인 페이지에서 다양한 프로그램을 볼 수 있도록 구성했습니다.
+                      </p>
+                      <p class="tools"><span>작업프로그램</span> : Photoshop, Visual Studio Code</p>
+                      <p class="etc"><span>작업기여도</span> : 100% 개인 작업</p>
+                      <p class="btn">
+                          <a href="#" class="proc">작업과정</a>
+                          <a href="./works/pofol02/index.html" target="_blank">사이트보기</a>
+                      </p>
+                      <p class="shadow">
+                          <span class="lightbox">
+                              <img src="./images/portfolio/process-02.jpg" alt="#">
+                          </span>
+                          <button class="clse">닫기</button>
+                      </p>
+
+                  </figcaption>
+                  <div class="frame">
+                      <img src="./images/portfolio/pofol-02.jpg" alt="서울식물원">
+                  </div>
+              </figure>
+              <figure>
+                  <figcaption>
+                      <h3>폴인 (리뉴얼 디자인)</h3>
+                      <p class="tip">fol:in Renewal Design</p>
+                      <p class="desc">
+                          기존 폴인 사이트의 메인페이지를 리뉴얼 디자인하였습니다.<br />
+                          기존 폴인 사이트의 메인페이지를 리뉴얼 디자인하였습니다.<br />
+                          기존 폴인 사이트의 메인페이지를 리뉴얼 디자인하였습니다.                   
+                      </p>
+                      <p class="tools"><span>작업프로그램</span> : Photoshop, Visual Studio Code</p>
+                      <p class="etc"><span>작업기여도</span> : 100% 개인 작업</p>
+                      <p class="btn">
+                          <a href="#" class="proc">작업과정</a>
+                          <a href="#" target="_blank">사이트보기</a>
+                      </p>
+                      <p class="shadow">
+                          <span class="lightbox">
+                              <img src="./images/portfolio/process-03.jpg" alt="#">
+                          </span>
+                          <button class="clse">닫기</button>
+                      </p>
+
+                  </figcaption>
+                  <div class="frame">
+                      <img src="./images/portfolio/pofol-03.jpg" alt="폴인">
+                  </div>
+              </figure>
+              <figure>
+                <figcaption>
+                    <h3>네번째 포폴작품</h3>
+                    <p class="tip">ISAAC TOAST Renewal Design</p>
+                    <p class="desc">
+                        기존 웹사이트의 개선사항을 찾아 메인페이지를 리뉴얼 디자인하였습니다. <br />
+                        이삭토스트의 컬러 아이덴티티를 사용하여 브랜드 이미지를 강조하였으며,<br />
+                        간결한 레이아웃으로 전달하고자 하는 내용을 보기 쉽게 배치하였습니다.
+                    </p>
+                    <p class="tools"><span>작업프로그램</span> : Photoshop, Visual Studio Code</p>
+                    <p class="etc"><span>작업기여도</span> : 100% 개인 작업</p>
+                    <p class="btn">
+                        <a href="#" class="proc">작업과정</a>
+                        <a href="여기에 포폴 주소를 써 넣으세요" target="_blank">사이트보기</a>
+                    </p>
+                    <p class="shadow">
+                        <span class="lightbox">
+                            <img src="./images/portfolio/process-02.jpg" alt="#">
+                        </span>
+                        <button class="clse">닫기</button>
+                    </p>
+
+                </figcaption>
+                <div class="frame">
+                    <img src="./images/portfolio/pofol-02.gif" alt="이삭토스트">
+                </div>
+            </figure>              
+          </div>
+
+          <a href="#" class="prev">이전</a>
+          <a href="#" class="next">다음</a>
+
+      </article>
+
+      <article class="intro">
+          <div class="container">
+              <h3>
+                  필요한 기능을 직접 <span>javascript/jquery 로직 구현</span>
+              </h3>
+              
+              <p>
+                  <span>
+                      ‘스타일을 창조하여 그것을 섬세한 디자인으로 탈바꿈 시키고싶다’ 는 마음으로 매일 노력하고 있습니다. <br />
+                      HTML5 & CSS3 시멘틱 페이지를 SCSS, ZenCoding(EMMET)으로 작성할 수 있습니다.<br />
+                      클라이언트의 요구사항을 적극적으로 반영하는 UI/UX 디자인 능력은 저의 최고의 장점중 하나입니다. <br />
+                  </span>
+                  
+                  <strong>
+                      JS 플러그인을 사용에 그치지 않고 필요한 기능을 직접 구현할 수 있는 Javascript/jQuery 로직구현이 가능합니다. <br />
+                      새로운 코딩기법과 디자인을 배우는 것이 정말 즐겁습니다.
+                  </strong>     
+              </p>
+              
+              <hr />
+              
+              
+              <div class="coding">
+                  <h4>
+                      <span>for문과 다중 if문의 결합한 로직 구현</span>
+                      <span class="circle">
+                          <span class="ring ring_1"></span>
+                          <span class="ring ring_2"></span>
+                          <span class="ring ring_3"></span>
+                          <span class="ring ring_4"></span>
+                          <span class="ring ring_5"></span>
+                          <span class="ring ring_6"></span>
+                          <span class="ring ring_7"></span>
+                      </span>                
+                  </h4>
+                  <div>
+                      <h4>SASS, Emmet 활용</h4>
+                      <p>
+                          <span>
+                              페이지 전체의 계층구조를 입체적으로 분석할 수 있는 <br />
+                              실무형 코딩기법 Emmet을 사용할 수 있어 업무시간을 단축시킬 수 있을뿐 아니라, <br />  
+                              유지보수도 더욱 쉽고 정확하게 처리할 수 있습니다.
+                          </span>
+                          
+                          <span>
+                              SCSS의 가장 큰 장점인 변수와 Mixin 기능을 적극 활용하여  <br />
+                              CSS 스타일링을 할 수 있습니다.
+                          </span>
+                          
+                          Sprite-Image와 IR(Image Replacement)기법에 능숙 <br />
+                          id, class를 남발하지 않고 원하는 요소를 셀렉팅할 수 있는 능력, <br />
+                          CSS3 Transform, Transition, Keyframes을 이용한 애니메이션 효과 구현                            
+                      </p>
+                      <span class="circle">
+                          <span class="ring ring_1"></span>
+                          <span class="ring ring_2"></span>
+                          <span class="ring ring_3"></span>
+                          <span class="ring ring_4"></span>
+                          <span class="ring ring_5"></span>
+                          <span class="ring ring_6"></span>
+                          <span class="ring ring_7"></span>
+                      </span>
+                  </div>
+              </div>
+          </div>
+
+      </article>    
+
+      <hr />
+
+      <article class="works">
+          <h3 class="wow fadeInUp">직접 구현한 슬라이드</h3>
+
+          <ul class="work-list">
+              <li>
+                  <h4>좌우이동 슬라이드</h4>
+                  <p>
+                      슬라이드 구현에 적합한 ul,li,a 태그와 flxe를 사용하여 UI를 구현하였습니다. <br />
+                      또한 자바스크립트로 position의 lef값을 동적으로 변화시켜 이동하도록 하였습니다.
+                      
+                      <span class="tip">플러그인 없이 직접 구현하였습니다.</span>
+                  </p>
+                  <a href="./works/pofol-slides/slide01/index.html" target="_blank" class="btnShow">슬라이드 보기</a>
+                  <p class="frame">
+                      <a href="./works/pofol-slides/slide01/index.html" target="_blank">
+                          <img src="./images/portfolio/slide-01-thmb.png" alt="#">
+                      </a>
+                  </p>
+              
+
+              </li>
+              <li>
+                  <h4>무한 슬라이드</h4>
+                  <p>
+                      이전, 다음 기능을 가진 업그레이드 된 슬라이드로서 사용자 편의성을 향상되었습니다. 제이쿼리의 fadeIn(), fadeOut() API를 이용하여 코드를 구현하였습니다.
+                      
+                      <span class="tip">플러그인 없이 직접 구현하였습니다.</span>
+                  </p>
+                  <a href="./works/pofol-slides/slide02/index.html" target="_blank" class="btnShow">슬라이드 보기</a>
+                  <p class="frame">
+                      <a href="./works/pofol-slides/slide02/index.html" target="_blank">
+                          <img src="./images/portfolio/slide-02-thmb.png" alt="#">
+                      </a>
+                  </p>
+
+              </li>
+              <li>
+                  <h4>자동실행 슬라이드</h4>
+                  <p>
+                      시작, 정지기능이 장착된 슬라이드로서 일관성있게 한쪽 방향에서 다음 슬라이드가 노출되는 기능을 append() API와 콜백함수의 개념을 접목하여 구현하였습니다.
+                      
+                      <span class="tip">플러그인 없이 직접 구현하였습니다.</span>
+                  </p>
+                  <a href="./works/pofol-slides/slide03/index.html" target="_blank" class="btnShow">슬라이드 보기</a>
+                  <p class="frame">
+                      <a href="./works/pofol-slides/slide03/index.html" target="_blank">
+                          <img src="./images/portfolio/slide-03-thmb.png" alt="#">
+                      </a>
+                  </p>
+
+              </li>
+          </ul>
+
+
+          <h3 class="wow fadeInUp">코딩 프로젝트</h3>          
+          <ul class="work-list">
+              <li>
+                  <p class="frame">
+                      <a href="./works/game/index.html" target="_blank">
+                          <img src="./images/portfolio/game-01.png" alt="#">
+                      </a>
+                  </p>
+              </li>
+              <li>
+                  <p class="frame">
+                      <a href="./works/game/index.html" target="_blank">
+                          <img src="./images/portfolio/game-02.png" alt="#">
+                      </a>
+                  </p>
+
+              </li>
+              <li>
+                  <p class="frame">
+                      <a href="./works/jeju/index.html" target="_blank">
+                          <img src="./images/portfolio/jeju.png" alt="#">
+                      </a>
+                  </p>
+
+              </li>
+          </ul>
+
+          <h3 class="wow fadeInUp">디자인 포트폴리오</h3>          
+          <ul class="work-list">
+              <li>
+                  <p class="frame">
+                      <a href="./images/portfolio/design01.pdf" target="_blank">
+                          <img src="./images/portfolio/design01.png" alt="#">
+                      </a>
+                  </p>
+              </li>
+              <li>
+                  <p class="frame">
+                      <a href="./images/portfolio/design02.pdf" target="_blank">
+                          <img src="./images/portfolio/design02.jpg" alt="#">
+                      </a>
+                  </p>
+
+              </li>
+              <li>
+                  <p class="frame">
+                      <a href="./images/portfolio/design03.pdf" target="_blank">
+                          <img src="./images/portfolio/design03.png" alt="#">
+                      </a>
+                  </p>
+
+              </li>
+          </ul>
+
+      </article>
+    </section>
+
+    <hr />
+
+    <section id="contact">
+      <h2 class="wow fadeInUp">CONTACT</h2>
+      <article class="apply">
+          <div class="help">
+              <h2>귀사에 입사를 지원합니다.</h2>
+              <p>
+                  저의 웹퍼블리싱 이야기 입니다. <br />
+
+                  질문을 선택하시면 정리된 답변을 보실수 있습니다.
+              </p>
+          </div>
+          <dl>
+              <dt>
+                  <a href="#">
+                      1. 시멘틱웹이 중요한 이유는 무엇인가요?
+                      <span class="arr">화살표</span>
+                  </a>
+              </dt>
+              <dd>
+                  <div class="answer">
+                    훌륭한 컨텐츠를 가지고 있다고 해도 그 컨텐츠가 사용자에게 닿지 않으면 의미가 없어집니다.<br />
+                    웹페이지를 필요로 하는 사용자에게 도달할 수 있도록 도와주는 것이 시멘틱웹입니다.<br />
+                    정보의 의미를 담아서 구성된 시멘틱 웹페이지는 사용자와 웹의 상호작용을 도와주게 됩니다.
+                  </div>
+              </dd>
+
+              <dt>
+                  <a href="#">
+                      2. 자바스크립트 라이브러리 사용시 가장 큰 장점은?
+                      <span class="arr">화살표</span>
+                  </a>
+              </dt>
+              <dd>
+                  <div class="answer">
+                    기존 자바스크립트만 사용했을 때 다소 복잡하게 느껴지는 코드를 간결하게 작성할 수 있다는 점입니다. <br />
+                    코드를 작성하는 입장에서는 훨씬 직관적인 명령어 사용으로 인해 작업의 효율성도 올라갑니다.
+                  </div>
+              </dd>
+
+              <dt>
+                  <a href="#">
+                      3. CSS 미디어쿼리는 어떤 역할을 수행하나요?
+                      <span class="arr">화살표</span>
+                  </a>
+              </dt>
+              <dd>
+                  <div class="answer">
+                    반응형 웹페이지 구현을 위한 역할을 합니다. <br /> 
+                    사용자의 환경에 따라서 최적화된 화면을 보여주기 위하여 미디어쿼리를 작성합니다.
+                </div>
+              </dd>
+
+              <dt>
+                  <a href="#">
+                      5. UI 디자인 시 가장 중요하게 생각하는 것이 무엇인가요?
+                      <span class="arr">화살표</span>
+                  </a>
+              </dt>
+              <dd>
+                <div class="answer">
+                    '조화로움'입니다. 독특하고 창의적인 디자인도 물론 필요한 부분이지만 <br /> 
+                    가독성이 중요한 UI 디자인에서는 모든 요소들이 조화롭게 어울리는지가 중요하다고 생각합니다. <br />
+                    전체적인 디자인의 통일성을 생각하여 구현하려고 노력하고 있습니다.
+                  </div>
+              </dd>
+
+              <dt>
+                  <a href="#">
+                    4. 웹퍼블리셔가 갖춰야 할 마인드는 무엇일까요?
+                      <span class="arr">화살표</span>
+                  </a>
+              </dt>
+              <dd>
+                <div class="answer">
+                    끈기있게 도전하는 자세라고 생각합니다. <br /> 
+                    끈질기게 노력하여 쌓은 하나하나의 경험이 저의 실력이 된다고 생각합니다. <br /> 
+                    때로는 잘 풀리지 않더라도 포기하지 않고 앞으로 나아가면 더 나은 모습이 되어있을 거라 믿습니다.
+                  </div>
+              </dd>
+          </dl>
+
+          <p>
+            더욱 궁금하신 점은 면접 시 말씀드리겠습니다. 감사합니다.
+            <br />
+            본 페이지는 저의 개인 포트폴리오용으로 제작되었으며, 상업적인 목적과 관련이 없음을 알려드립니다.
+          </p>
+      </article>
+  </section>
+
+    <footer>
+
+      <article class="working">
+        <h2 class="sr-only">진행중인 작업</h2>
+        <p>
+          <b>NEW</b>
+          <a href="#">설화수 메인페이지 리뉴얼 작업중</a>
+          <time datetime="2022-04-18 11:13">2022-10-11</time>
+        </p>
+      </article>
+
+      <article class="info">
+        <div class="container">
+          <h2>&copy; 2022 Designed BY 김은지</h2>
+          <p class="contact">
+            <a href="tel:01072943724">HP : 010-8764-1226</a>
+            <span class="bar">|</span>
+            <a href="email:mvcweb@naver.com">Email : enjkm62@gmail.com</a>
+          </p>
+          <p class="iam_1">자바스크립트와 jQuery 로직을 구현할 수 있는 웹퍼블리셔</p>
+          <p class="iam_2">구조와 디자인, 기능을 분리한 MVC패턴의 시멘틱 웹페이지를 <span>구현할 수 있는 퍼블리셔</span></p>
+        </div>
+      </article>
+    </footer>
+	
+    <aside>
+      <a href="#"><i class="fas fa-angle-up"></i></a>
+    </aside>
+<!-- 	
+	<aside><div class="addthis_inline_share_toolbox"></div></aside>
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-630ebc7e6bbac8f6"></script>	 -->
+  </div>
+</body>
+
+</html>
