@@ -244,7 +244,7 @@ $point-color-2 : #98BB2D;
                 }
     
                 &.next{
-                    right: 10px;
+                    right: 0;
                     background-image: url(./../images/sp_seoul.png);
                     background-position: -212px -106px;
                 }
@@ -300,7 +300,11 @@ $point-color-2 : #98BB2D;
                     margin-right: 50px;
 
                     &:last-child{margin-right: 0;}
-
+                        
+                    &:nth-child(1)>a{background-image: url(./../images/info_01.png);}
+                    &:nth-child(2)>a{background-image: url(./../images/info_02.png);padding-left: 20px;}
+                    &:nth-child(3)>a{background-image: url(./../images/info_03.png);padding-left: 26px;}
+                    &:nth-child(4)>a{background-image: url(./../images/info_04.png);padding-left: 20px;}
                     >a{
                         display: block;
                         padding-left: 30px;
@@ -308,12 +312,7 @@ $point-color-2 : #98BB2D;
                         font-size: 16px;
                         background-repeat: no-repeat;
                         background-size: contain;
-    
-                        &:nth-child(1){background-image: url(./../images/info_01.png);}
-                        &:nth-child(2){background-image: url(./../images/info_02.png);padding-left: 20px;}
-                        &:nth-child(3){background-image: url(./../images/info_03.png);padding-left: 26px;}
-                        &:nth-child(4){background-image: url(./../images/info_04.png);padding-left: 20px;}
-                    }
+                    }//end of a
                 }//end of li
 
             }//end of ul

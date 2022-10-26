@@ -1,19 +1,11 @@
-//로딩중(애니큐빅)
+//WOW 플러그인 연동
 $(function() {
-	const $loading = $('.loading');
-	$loading.children('p').fadeOut();
-	$loading.delay(350).fadeOut(800,function(){
-		$(this).remove();
-	});
-	
-	
 	$(window).on("load", function(){
-		new WOW().init();//WOW 플러그인 연동
+		new WOW().init();
 	});		
 });
 
-
-//인트로, 네비게이션
+//visual 영역, 네비게이션 메뉴
 $(function() {
 	const $h1 = $('h1');
 	const $home = $('#home');
@@ -28,26 +20,26 @@ $(function() {
 		//$home.height($(window).height());
 		$home.height(window.innerHeight);
 
-		$h1.css({
-			top: $intro.offset().top - 72,
-			marginLeft: -$h1.width() / 2
-		});
+		// $h1.css({
+		// 	top: $intro.offset().top - 72,
+		// 	marginLeft: -$h1.width() / 2
+		// });
 
 		//가로폭 크기 기준 - window객체의 경우 .width()가 정확히 측정하지 못하므로(17px 모자름) window.innerWidth 사용권장
 		if(window.innerWidth>640){//PC모드
 			//PC모드
-			$h1.css({
-				top: $intro.offset().top - 72,
-				marginLeft: -$h1.width() / 2
-			});
+			// $h1.css({
+			// 	top: $intro.offset().top - 72,
+			// 	marginLeft: -$h1.width() / 2
+			// });
 
 			$nav.show();
 		} else {
 			//모바일
-			$h1.css({
-				top: $intro.offset().top - 100,
-				marginLeft: -$h1.width() / 2
-			});
+			// $h1.css({
+			// 	top: $intro.offset().top - 100,
+			// 	marginLeft: -$h1.width() / 2
+			// });
 
 			$btnGnb.removeClass('clse');
 			$nav.hide();
@@ -83,7 +75,7 @@ $(function() {
             if(scrollTop>window.innerHeight-400){
                 $home.css({
                     //top:66,
-                    transform:'scale(0.9)'
+                    transform:'scale(0.7)'
                 });
             }else{
                 $home.css({
@@ -210,87 +202,7 @@ $(function(){
 });
 
 
-//#uxdesign 영역의 slides
-$(function(){
-
-    const $container = $('#uxdesign .slides-container');
-    const $indicator = $('#uxdesign .slides-pagination>li>a');
-    const $btnNext = $("#uxdesign .next");
-    const $btnPrev = $("#uxdesign .prev");
-    let nowIdx = 0;
-
-
-    //컨테이너 이동
-    function moveFn(){
-        //컨테이너 이동
-        $container.stop().animate({
-            left : -(nowIdx * 100) + '%'
-        },400,"easeInOutCubic",function(){
-            console.log("슬라이드 이동 완료~!");
-        });
-    }
-
-    //활성화 표시
-    function indicatorFn(){
-        $indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
-    }
-
-
-    $indicator.on('click', function(evt){
-        nowIdx = $indicator.index(this);
-
-        moveFn();
-        indicatorFn();
-
-        evt.preventDefault();
-    });
-
-    
-    $btnNext.on('click', function(evt){
- 
-        if(nowIdx<=2){
-            nowIdx++;
-        }else{
-            nowIdx = 0;
-        }
-
-        //컨테이너 이동
-        $container.stop().animate({left : '-100%'},400,"easeInOutCubic",function(){            
-            const $slides = $('.slides-container>li');//li 4개
-            $slides.first().appendTo($container);
-            $container.css({left:0});
-        });
-        
-        indicatorFn();//인디케이터 활성화
-
-        evt.preventDefault();
-    });
-
-
-    $btnPrev.on('click', function(evt){
-
-        // 보여줄 슬라이드에 대한 인덱스번호 추출
-       if(nowIdx>=1) {
-        nowIdx--;
-       }else{     
-         nowIdx=3;
-       };
-
-       const $slides = $('.slides-container>li');//li 4개
-
-       //컨테이너 이동
-       $slides.last().prependTo($container);
-       $container.css({left: '-100%'});
-       $container.stop().animate({left : 0},400,"easeInOutCubic",function(){});
-
-       indicatorFn();//인디케이터 활성화
-
-       evt.preventDefault();
-      });
-});
-
-
-//portfolio
+//portfolio 영역
 $(function(){
 
     //페이드 슬라이드
@@ -467,7 +379,7 @@ $(function(){
 });
 
 
-//contact
+//contact 영역
 $(function(){
     
     const $tit = $("#contact .apply>dl>dt>a");
@@ -478,7 +390,7 @@ $(function(){
     });
 });
 
-//오른쪽 하단 탑버튼
+//탑버튼
 $(function() {
 	const $aside = $('aside'); //오른쪽 하단 탑버튼
 

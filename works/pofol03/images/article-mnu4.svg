@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path data-name="선 1243" transform="translate(6 4)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:#2d2a26;fill:none" d="M0 0v5"/>
+    <path data-name="선 1244" transform="translate(20 4)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:#2d2a26;fill:none" d="M0 0v5"/>
+    <g data-name="사각형 3218" transform="translate(1 5)" style="fill:#fff;stroke:#2d2a26">
+        <rect width="24" height="20" rx="2" style="stroke:none"/>
+        <rect x=".5" y=".5" width="23" height="19" rx="1.5" style="fill:none"/>
+    </g>
+    <path data-name="사각형 3220" d="M2 0h20a2 2 0 0 1 2 2v4H0V2a2 2 0 0 1 2-2z" transform="translate(1 5)" style="fill:#2d2a26"/>
+    <g data-name="shape">
+        <path data-name="빼기 3" d="M0 7.91V0h8v7.907L4 6 0 7.909z" transform="translate(20 23.09)" style="fill:#ff5c3e"/>
+        <path data-name="패스 10264" d="M13.4 3.67a7 7 0 1 0 7 7 7 7 0 0 0-7-7z" transform="translate(10.595 9.33)" style="fill:#febd00"/>
+        <path data-name="패스 10266" d="M10.4 3.67a4 4 0 1 0 4 4 4 4 0 0 0-4-4z" transform="translate(13.595 12.357)" style="fill:#fce181"/>
+    </g>
+</svg>

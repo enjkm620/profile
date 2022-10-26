@@ -1,4 +1,10 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 @-webkit-keyframes mousewheel {
   0% {
     top: 5px;
@@ -30,37 +36,14 @@
 #wrap {
   position: relative;
   min-width: 1200px;
+  color: #666;
+  font-family: "GmarketSansMedium";
+  letter-spacing: -0.5px;
 }
 @media screen and (max-width:640px) {
   #wrap {
     min-width: 100%;
   }
-}
-#wrap .loading {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 1000;
-}
-#wrap .loading > p {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 64px;
-  height: 64px;
-  margin: -32px 0 0 -32px;
-  text-indent: -9999px;
-  background-image: url(./../images/loading.gif);
-}
-#wrap > h1 {
-  position: absolute;
-  left: 50%;
-  color: #fff;
-  font-size: 24px;
-  z-index: 100;
 }
 
 #home {
@@ -72,7 +55,7 @@
   #home {
     background-image: url(./../images/visual.jpg);
     background-position: center center;
-    background-size: cover;
+    background-size: 140%;
     background-repeat: no-repeat;
   }
 }
@@ -87,7 +70,7 @@
 #home > .intro {
   position: absolute;
   left: 0;
-  top: 35%;
+  top: 30%;
   width: 100%;
   text-align: center;
 }
@@ -97,69 +80,60 @@
     padding-bottom: 30px;
   }
 }
+#home > .intro > h1 {
+  margin-bottom: 20px;
+  color: #db98cd;
+  font-family: "Poiret One", cursive;
+  font-size: 60px;
+  font-weight: 400;
+}
+@media screen and (max-width:640px) {
+  #home > .intro > h1 {
+    font-size: 42px;
+  }
+}
 #home > .intro > h2 {
   margin-bottom: 24px;
-  color: #9578d2;
-  font-size: 60px;
-  line-height: 80px;
-  letter-spacing: 5px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
 }
 @media screen and (max-width:640px) {
   #home > .intro > h2 {
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 #home > .intro > h2 > span {
-  color: #e6aad9;
+  display: block;
+  font-weight: 400;
+  font-size: 26px;
 }
 @media screen and (max-width:640px) {
   #home > .intro > h2 > span {
     display: block;
+    font-size: 20px;
   }
 }
 #home > .intro > p {
   color: #f7f7f7;
+  font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 1px;
+}
+#home > .intro > p > span {
+  display: block;
 }
 @media screen and (max-width:640px) {
   #home > .intro > p > span {
     display: block;
   }
 }
-#home > .intro > .myico {
-  display: flex;
-  justify-content: space-between;
-  width: 320px;
-  margin: 40px auto 0;
+#home > .intro > p > span > strong {
+  color: #db98cd;
 }
-@media screen and (max-width:640px) {
-  #home > .intro > .myico {
-    margin-top: 40px;
-  }
-}
-#home > .intro > .myico > span {
-  display: block;
-  width: 40px;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  transform: rotate(45deg);
-  transition: all 0.4s;
-}
-#home > .intro > .myico > span:hover {
-  background-color: #9578d2;
-  border-color: transparent;
-  cursor: pointer;
-}
-#home > .intro > .myico > span > i {
-  display: block;
-  height: 40px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 40px;
-  text-align: center;
-  transform: rotate(-45deg);
+#home > .intro > p > span > em {
+  color: #ae9dce;
 }
 #home > .mouse {
   position: absolute;
@@ -222,33 +196,39 @@ header.fixed {
   left: 0;
   top: 0;
 }
-header:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  width: 100%;
-  height: 2px;
-  border-bottom: 1px solid #eee;
-  content: "";
-}
 header > .container {
   position: relative;
+  width: 80%;
   height: 66px;
+  margin: 0 auto;
+}
+@media screen and (max-width:640px) {
+  header > .container {
+    width: 100%;
+  }
 }
 header > .container > h2 {
   position: absolute;
   left: 7%;
   top: 50%;
-  margin-top: -17px;
+  margin-top: -13px;
+  font-size: 16px;
+  font-weight: 400;
   text-indent: 40px;
   background-image: url(./../images/logo.png);
+  background-size: 12%;
+  background-position: 15px 2px;
   background-repeat: no-repeat;
+}
+@media screen and (max-width:640px) {
+  header > .container > h2 {
+    left: 2%;
+  }
 }
 header > .container > h2 > a {
   display: block;
   height: 32px;
-  color: #2C3E50;
+  color: #666;
   line-height: 32px;
 }
 header > .container > .btn-gnb {
@@ -299,7 +279,7 @@ header > .container > .btn-gnb {
 header > .container > nav {
   position: absolute;
   right: 7%;
-  top: 26px;
+  top: 28px;
 }
 @media screen and (max-width:640px) {
   header > .container > nav {
@@ -325,7 +305,7 @@ header > .container > nav > .gnb > li {
   header > .container > nav > .gnb > li {
     border-right: none;
     background-color: #fff;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
   }
 }
 header > .container > nav > .gnb > li:last-child {
@@ -336,7 +316,8 @@ header > .container > nav > .gnb > li > a {
   height: 14px;
   padding: 0 15px;
   color: #666;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 11px;
   line-height: 12px;
   transition: all 0.2s;
 }
@@ -356,569 +337,264 @@ header ~ section {
   padding-top: 80px;
 }
 header ~ section > h2 {
-  margin-bottom: 72px;
-  color: #2C3E50;
-  font-size: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: #666;
+  font-size: 32px;
   line-height: 50px;
   text-align: center;
 }
-header ~ section > h2:after {
-  display: block;
-  width: 138px;
-  height: 15px;
-  margin: 30px auto 0;
-  background-image: url(./../images/deco_tit.png);
-  content: "";
-}
 
+section#aboutme strong {
+  font-weight: 500;
+  color: #7a5ac1;
+}
+section#aboutme em {
+  font-style: normal;
+  color: #ae9dce;
+}
 section#aboutme > .container {
   display: flex;
-  flex-flow: row-reverse nowrap;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
   padding-bottom: 30px;
 }
 @media screen and (max-width:640px) {
   section#aboutme > .container {
-    display: block;
+    width: 100%;
     padding-bottom: 0;
+    flex-flow: column wrap;
   }
 }
-section#aboutme > .container > .profile {
-  width: 33.33333%;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .container > .profile {
-    width: 100%;
-  }
-}
-section#aboutme > .container > .profile > div {
-  position: relative;
-  width: 360px;
-  margin: 0 auto;
-  border: 1px solid #eee;
-  border-radius: 0 0 10px 10px;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .container > .profile > div {
-    width: 95%;
-  }
-}
-section#aboutme > .container > .profile > div:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 20px;
-  border-bottom: 1px solid #eee;
-  border-radius: 0 0 10px 10px;
-  content: "";
-}
-section#aboutme > .container > .profile > div > .myphoto {
-  overflow: hidden;
-  background-image: url(./../images/aboutme/photo-frame.png);
-  background-position: center bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-section#aboutme > .container > .profile > div > .myphoto > img {
-  display: block;
-  position: relative;
-  z-index: -1;
-  margin: 0px 0 0 -60px;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .container > .profile > div > .myphoto > img {
-    margin: 0;
-  }
-}
-section#aboutme > .container > .profile > div > ol {
-  padding: 0 20px;
-}
-section#aboutme > .container > .profile > div > ol > li {
-  height: 45px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 45px;
-  border-bottom: 1px solid #eee;
-}
-section#aboutme > .container > .profile > div > ol > li:last-child {
-  border-bottom: 0;
-}
-section#aboutme > .container > .biography {
-  width: 66.66666%;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .container > .biography {
-    width: 100%;
-    margin-top: 48px;
-  }
-}
-section#aboutme > .container > .biography > .detail {
-  margin-bottom: 64px;
-  padding-left: 10%;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .container > .biography > .detail {
-    padding: 0 5%;
-  }
-}
-section#aboutme > .container > .biography > .detail > h3 {
-  margin-bottom: 30px;
-  font-weight: 500;
-  font-size: 32px;
-}
-section#aboutme > .container > .biography > .detail > p {
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: 300;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .container > .biography > .detail > p > br {
-    display: none;
-  }
-}
-section#aboutme > .container > .biography > .detail > p > mark {
-  background-color: #fbe7f9;
-}
-section#aboutme > .container > .biography > .detail > .ican {
+section#aboutme > .container > .info {
   display: flex;
-  flex-flow: row wrap;
-  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width:640px) {
-  section#aboutme > .container > .biography > .detail > .ican {
-    margin-top: 50px;
+  section#aboutme > .container > .info {
+    flex-flow: column wrap;
   }
 }
-section#aboutme > .container > .biography > .detail > .ican > li {
-  width: 345px;
-  height: 40px;
-  font-size: 16px;
-  line-height: 40px;
-}
-section#aboutme > .container > .biography > .detail > .ican > li:before {
-  margin-right: 10px;
-  color: #9578d2;
-  font-family: "Font Awesome 5 Free";
-  content: "\f14a";
-}
-section#aboutme > .workstyle {
-  width: 100%;
-  margin-top: 24px;
-  background-color: #2C3E50;
+section#aboutme > .container > .info > .myself {
+  margin-right: 30px;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  font-size: 14px;
 }
 @media screen and (max-width:640px) {
-  section#aboutme > .workstyle {
-    margin-top: 0;
-  }
-}
-section#aboutme > .workstyle > .container {
-  position: relative;
-  width: 1100px;
-  height: 120px;
-  margin: 0 auto;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .workstyle > .container {
-    width: 100%;
-    margin: 0;
-  }
-}
-section#aboutme > .workstyle > .container:after {
-  display: block;
-  position: absolute;
-  left: 120px;
-  top: 20px;
-  width: 67px;
-  height: 60px;
-  background-image: url(../images/aboutme/audio.gif);
-  content: "";
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .workstyle > .container:after {
-    display: none;
-  }
-}
-section#aboutme > .workstyle > .container > ol {
-  position: absolute;
-  left: 130px;
-  top: 15px;
-  width: 560px;
-  height: 105px;
-  font-size: 16px;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .workstyle > .container > ol {
-    position: initial;
-    width: 100%;
-    height: initial;
-    padding-top: 15px;
-  }
-}
-section#aboutme > .workstyle > .container > ol:before, section#aboutme > .workstyle > .container > ol:after {
-  display: block;
-  position: absolute;
-  width: 300px;
-  margin-left: 300px;
-  color: #fff;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .workstyle > .container > ol:before, section#aboutme > .workstyle > .container > ol:after {
-    display: none;
-  }
-}
-section#aboutme > .workstyle > .container > ol:before {
-  left: 55%;
-  top: 20px;
-  content: "하는";
-}
-section#aboutme > .workstyle > .container > ol:after {
-  left: 60%;
-  top: 60px;
-  content: "코딩 스타일을 좋아합니다!";
-}
-section#aboutme > .workstyle > .container > ol > li {
-  color: #fff;
-  font-weight: 300;
-  line-height: 30px;
-  text-align: right;
-  letter-spacing: 0.1em;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .workstyle > .container > ol > li {
+  section#aboutme > .container > .info > .myself {
+    margin-right: 0;
+    margin-bottom: 50px;
     text-align: center;
   }
 }
-section#aboutme > .workstyle > .container > ol > li > span {
-  color: #c2bbe5;
-  font-weight: 400;
-}
-section#aboutme > .talk {
-  background-image: url(./../images/aboutme/bg_talk.jpg);
-  background-size: cover;
-}
-section#aboutme > .talk > h3 {
-  padding: 70px 0;
-  color: #2C3E50;
-  font-weight: 500;
-  font-size: 32px;
-  text-align: center;
-}
-section#aboutme > .talk > ul {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 50px;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .talk > ul {
-    display: block;
-    width: 95%;
-    margin: 0 auto;
-  }
-}
-section#aboutme > .talk > ul > li {
-  position: relative;
-  /*기준점 설정*/
-  width: 30%;
-  min-width: 155px;
-  min-height: 400px;
-  padding: 0 2%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 16px;
-  box-sizing: border-box;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .talk > ul > li {
-    width: 100%;
-    min-height: 450px;
-    margin-bottom: 20px;
-    padding: 0 10%;
-    box-shadow: 0 0 10px rgba(14, 14, 14, 0.5);
-  }
-  section#aboutme > .talk > ul > li:last-child {
-    margin-bottom: 0;
-  }
-}
-section#aboutme > .talk > ul > li > h4 {
-  position: absolute;
-  left: 50%;
-  top: 140px;
-  margin-left: 30px;
-  padding: 5px 10px 5px 30px;
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 3px;
-  /*자동줄바꿈 안됨*/
-  white-space: nowrap;
-  background-color: #9578d2;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .talk > ul > li > h4 {
-    top: initial;
-    bottom: 15px;
-    margin-left: -30px;
-    padding: 5px 10px;
-    letter-spacing: 5px;
-    text-indent: 5px;
-  }
-}
-section#aboutme > .talk > ul > li > h4:after {
-  display: block;
-  position: absolute;
-  left: -105px;
-  top: -115px;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  content: "";
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .talk > ul > li > h4:after {
-    top: -370px;
-    left: -50px;
-  }
-}
-section#aboutme > .talk > ul > li:nth-child(1) > h4:after {
-  background-image: url(../images/aboutme/friend-1.jpg);
-}
-section#aboutme > .talk > ul > li:nth-child(2) > h4:after {
-  background-image: url(../images/aboutme/friend-2.jpg);
-}
-section#aboutme > .talk > ul > li:nth-child(3) > h4:after {
-  background-image: url(../images/aboutme/friend-3.jpg);
-}
-section#aboutme > .talk > ul > li > strong {
-  display: block;
-  margin: 190px 0 30px;
-  font-size: 16px;
-  text-align: center;
-  /* 한줄로 처리하는 CSS구문 3종세트*/
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media screen and (max-width:640px) {
-  section#aboutme > .talk > ul > li > strong {
-    margin: 210px 0 30px;
-  }
-}
-section#aboutme > .talk > ul > li > p {
-  line-height: 1.8;
-  text-align: center;
-}
-
-section#skill > article.skill-1 {
-  margin-bottom: 120px;
-}
-@media screen and (max-width:640px) {
-  section#skill > article.skill-1 {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #eee;
-  }
-}
-section#skill > article > h3 {
-  margin-bottom: 80px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
-  text-align: center;
-}
-@media screen and (max-width:640px) {
-  section#skill > article > h3 {
-    margin-bottom: 40px;
-  }
-}
-section#skill > article > h3 > span {
+section#aboutme > .container > .info > .myself > span {
   display: block;
 }
-section#skill > article > ol {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-@media screen and (max-width:640px) {
-  section#skill > article > ol {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-section#skill > article > ol > li {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  width: 45%;
-  height: 150px;
-  padding-left: 180px;
+section#aboutme > .container > .info > .frame {
+  width: 512px;
+  height: 512px;
+  margin-right: 30px;
+  background-image: url(./../images/aboutme.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (max-width:640px) {
+  section#aboutme > .container > .info > .frame {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+section#aboutme > .container > .info > ol {
+  line-height: 28px;
+  font-size: 13px;
+}
+
+section#skill > ol {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+@media screen and (max-width:640px) {
+  section#skill > ol {
+    width: 100%;
+  }
+}
+section#skill > ol > li {
+  margin-bottom: 30px;
+}
+section#skill > ol > li > h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+section#skill > ol > li > .web {
+  display: flex;
+  justify-content: center;
+}
+section#skill > ol > li > .web > li {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 230px;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  background-size: 50%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+section#skill > ol > li > .web > li:nth-child(1) {
+  background-image: url(./../images/skill1.png);
+  background-position: center 25px;
+}
+section#skill > ol > li > .web > li:nth-child(2) {
+  background-image: url(./../images/skill2.png);
+}
+section#skill > ol > li > .web > li:nth-child(3) {
+  background-image: url(./../images/skill3.png);
+  margin-right: 0;
+}
+@media screen and (max-width:640px) {
+  section#skill > ol > li > .web > li {
+    margin-right: 10px;
+  }
+  section#skill > ol > li > .web > li:nth-child(3) {
+    margin-right: 0;
+  }
+}
+section#skill > ol > li > .design {
+  display: flex;
+  justify-content: center;
+}
+section#skill > ol > li > .design > li {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 230px;
+  background-repeat: no-repeat;
+  background-position: center 33px;
+  background-size: 50%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+section#skill > ol > li > .design > li:nth-child(1) {
+  background-image: url(./../images/skill4.png);
+  background-position: center 25px;
+}
+section#skill > ol > li > .design > li:nth-child(2) {
+  background-image: url(./../images/skill5.png);
+  background-position: center 25px;
+}
+section#skill > ol > li > .design > li:nth-child(3) {
+  background-image: url(./../images/skill6.png);
+  margin-right: 0;
+}
+@media screen and (max-width:640px) {
+  section#skill > ol > li > .design > li {
+    margin-right: 10px;
+  }
+  section#skill > ol > li > .design > li:nth-child(3) {
+    margin-right: 0;
+  }
+}
+section#skill > ol > li > p {
+  text-align: center;
+  line-height: 1.7;
+}
+section#skill > ol > li > p:first-child {
+  margin-bottom: 50px;
+}
+@media screen and (max-width:640px) {
+  section#skill > ol > li > p > span {
+    display: block;
+  }
+}
+
+section#ability > .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
   box-sizing: border-box;
 }
 @media screen and (max-width:640px) {
-  section#skill > article > ol > li {
+  section#ability > .container {
     width: 100%;
   }
-  section#skill > article > ol > li:first-child {
-    margin-bottom: 40px;
-  }
 }
-section#skill > article > ol > li > h4 {
-  margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 24px;
+section#ability > .container > h2 {
+  font-size: 30px;
+  text-indent: 40px;
+  margin-bottom: 80px;
 }
-section#skill > article > ol > li > p {
-  line-height: 1.6;
-}
-section#skill > article.skill-1 li:first-child {
-  padding-left: 360px;
-  background-image: url(./../images/skill/skill01.png);
-  background-position: 180px 0;
-}
-@media screen and (max-width:640px) {
-  section#skill > article.skill-1 li:first-child {
-    padding-left: 180px;
-    background-position: 0 0;
-  }
-}
-section#skill > article.skill-1 li:last-child {
-  background-image: url(./../images/skill/skill02.png);
-}
-section#skill > article.skill-2 li:first-child {
-  padding-left: 360px;
-  background-image: url(./../images/skill/skill03.png);
-  background-position: 180px 0;
-}
-@media screen and (max-width:640px) {
-  section#skill > article.skill-2 li:first-child {
-    padding-left: 180px;
-    background-position: 0 0;
-  }
-}
-section#skill > article.skill-2 li:last-child {
-  background-image: url(./../images/skill/skill04.png);
-}
-
-section#ability {
-  margin-top: 100px;
-  background-color: #222;
-}
-section#ability > h2 {
-  color: #fff;
-}
-section#ability > .ability-container {
-  padding-bottom: 50px;
-}
-section#ability > .ability-container > .stick {
+section#ability > .container > .stick {
   display: flex;
   justify-content: space-around;
 }
 @media screen and (max-width:640px) {
-  section#ability > .ability-container > .stick {
+  section#ability > .container > .stick {
     display: block;
   }
 }
-section#ability > .ability-container > .stick > .stick-container {
+section#ability > .container > .stick > .stick-container {
   width: 43%;
 }
 @media screen and (max-width:640px) {
-  section#ability > .ability-container > .stick > .stick-container {
+  section#ability > .container > .stick > .stick-container {
     width: 100%;
   }
 }
-section#ability > .ability-container > .stick > .stick-container > .item {
-  margin-bottom: 40px;
+section#ability > .container > .stick > .stick-container > .item {
   display: flex;
+  margin-bottom: 40px;
+  color: #666;
 }
 @media screen and (max-width:640px) {
-  section#ability > .ability-container > .stick > .stick-container > .item {
+  section#ability > .container > .stick > .stick-container > .item {
     padding: 0 7%;
   }
 }
-section#ability > .ability-container > .stick > .stick-container > .item > h3 {
-  width: 17%;
-  height: 10px;
+section#ability > .container > .stick > .stick-container > .item > h3 {
+  width: 25%;
+  height: 40px;
   padding-right: 8%;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 10px;
   text-align: right;
 }
 @media screen and (max-width:640px) {
-  section#ability > .ability-container > .stick > .stick-container > .item > h3 {
-    font-size: 15px;
+  section#ability > .container > .stick > .stick-container > .item > h3 {
+    font-size: 14px;
   }
 }
-section#ability > .ability-container > .stick > .stick-container > .item .progress {
+section#ability > .container > .stick > .stick-container > .item > .progress {
   position: relative;
-  width: 75%;
+  width: 70%;
   height: 10px;
-  background-color: #3a4149;
-  border-radius: 3px;
+  background-color: #666;
+  border-radius: 0 3px 3px 0;
 }
-section#ability > .ability-container > .stick > .stick-container > .item .progress .bar {
-  height: 100%;
-  /* width: 100px; js에서 동적으로 할당 */
-  width: 0;
+section#ability > .container > .stick > .stick-container > .item > .progress > p.bar {
+  width: 0%;
+  height: 10px;
   background-color: #9578d2;
+  border-radius: 0 3px 3px 0;
   transition: all 2s ease-in-out;
 }
-section#ability > .ability-container > .stick > .stick-container > .item .progress .bar > span {
+section#ability > .container > .stick > .stick-container > .item > .progress > p.bar > span {
   position: absolute;
-  top: -20px;
   right: 15px;
-  color: #fff;
-}
-section#ability > .ability-container > .piechart {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-@media screen and (max-width:640px) {
-  section#ability > .ability-container > .piechart {
-    flex-flow: wrap;
-    margin-top: 70px;
-  }
-}
-section#ability > .ability-container > .piechart > .item {
-  width: 140px;
-  height: 200px;
-}
-section#ability > .ability-container > .piechart > .item > .chart {
-  position: relative;
-  width: 140px;
-  height: 140px;
-  text-align: center;
-}
-section#ability > .ability-container > .piechart > .item > .chart canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-section#ability > .ability-container > .piechart > .item > .chart > .percent {
-  color: #fff;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 140px;
-}
-section#ability > .ability-container > .piechart > .item > .chart > .percent:after {
-  content: "%";
-}
-section#ability > .ability-container > .piechart > .item > .chart > .tit {
-  height: 60px;
-  color: #fbe7f9;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 60px;
+  top: -20px;
+  color: #9578d2;
 }
 section#ability > .resume {
   padding: 50px 0;
@@ -944,7 +620,7 @@ section#ability > .resume > div > .frame {
   width: 520px;
   height: 340px;
   margin-right: 50px;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
 }
 @media screen and (max-width:640px) {
   section#ability > .resume > div > .frame {
@@ -983,7 +659,7 @@ section#ability > .resume > div > .iam > a {
   line-height: 40px;
   letter-spacing: 1px;
   text-align: center;
-  background-color: #222;
+  background-color: #666;
   transition: all 0.2s;
 }
 @media screen and (max-width:640px) {
@@ -1011,9 +687,9 @@ section#ability > .resume > div > .iam > .shadow > .lightbox {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 1200px;
+  width: 1000px;
   height: 800px;
-  margin: -400px 0 0 -600px;
+  margin: -400px 0 0 -500px;
 }
 section#ability > .resume > div > .iam > .shadow > .lightbox > img {
   display: block;
@@ -1024,423 +700,81 @@ section#ability > .resume > div > .iam > .shadow > .clse {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: 370px 0 0 540px;
+  margin: 360px 0 0 430px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  color: #666;
+  font-family: "GmarketSansMedium";
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section#ability > .resume > div > .iam > .shadow > .clse:hover {
+  color: #fff;
+  background-color: #9578d2;
 }
 
-section#uxdesign {
-  width: 1200px;
-  margin: 0 auto;
+section#personality {
+  width: 85%;
+  margin: 50px auto;
 }
-@media screen and (max-width:640px) {
-  section#uxdesign {
-    width: 100%;
-    margin: 0;
-  }
-}
-section#uxdesign > .slides {
-  overflow: hidden;
-  position: relative;
-  height: 440px;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .slides {
-    width: 100%;
-    height: 300px;
-  }
-}
-section#uxdesign > .slides > .slides-container {
-  display: flex;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 400%;
-}
-section#uxdesign > .slides > .slides-container > li {
-  width: 100%;
-  height: 440px;
-  text-indent: -9999px;
-  background-position: center center;
-  background-size: cover;
-}
-section#uxdesign > .slides > .slides-container > li.banner_1 {
-  background-image: url(../images/uxdesign/slides/slide_1.jpg);
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .slides > .slides-container > li.banner_1 {
-    background-image: url(../images/uxdesign/slides/rwd_slide_1.png);
-  }
-}
-section#uxdesign > .slides > .slides-container > li.banner_2 {
-  background-image: url(../images/uxdesign/slides/slide_2.png);
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .slides > .slides-container > li.banner_2 {
-    background-image: url(../images/uxdesign/slides/rwd_slide_2.jpg);
-  }
-}
-section#uxdesign > .slides > .slides-container > li.banner_3 {
-  background-image: url(../images/uxdesign/slides/slide_3.jpg);
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .slides > .slides-container > li.banner_3 {
-    background-image: url(../images/uxdesign/slides/rwd_slide_3.jpeg);
-  }
-}
-section#uxdesign > .slides > .slides-container > li.banner_4 {
-  background-image: url(../images/uxdesign/slides/slide_4.jpg);
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .slides > .slides-container > li.banner_4 {
-    background-image: url(../images/uxdesign/slides/rwd_slide_4.jpg);
-  }
-}
-section#uxdesign > .slides > .slides-pagination {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  left: 50%;
-  bottom: 15px;
-  width: 110px;
-  margin-left: -55px;
-}
-section#uxdesign > .slides > .slides-pagination > li {
-  width: 18px;
-  background-image: url(../images/uxdesign/slides/bul.png);
-}
-section#uxdesign > .slides > .slides-pagination > li:hover, section#uxdesign > .slides > .slides-pagination > li.on {
-  background-position: 0 -18px;
-}
-section#uxdesign > .slides > .slides-pagination > li > a {
-  display: block;
-  height: 18px;
-  text-indent: -9999px;
-}
-section#uxdesign > .slides > a {
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 80px;
-  height: 100px;
-  margin-top: -50px;
-  text-indent: -9999px;
-  background-image: url(./../images/uxdesign/slides/btn_navigation.png);
-  background-repeat: no-repeat;
-}
-section#uxdesign > .slides > a.prev {
-  left: 0;
-  background-position: -5px -225px;
-}
-section#uxdesign > .slides > a.prev:hover {
-  background-position: -5px -335px;
-}
-section#uxdesign > .slides > a.next {
-  right: 0;
-  background-position: -5px -5px;
-}
-section#uxdesign > .slides > a.next:hover {
-  background-position: -5px -115px;
-}
-section#uxdesign > .intro {
-  padding: 80px 0 104px;
-}
-section#uxdesign > .intro > h3 {
-  position: relative;
-  margin-bottom: 56px;
-  font-size: 32px;
-  text-align: center;
-  font-weight: 500;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .intro > h3 > span {
-    display: block;
-    height: 0;
-    text-indent: -9999px;
-  }
-}
-section#uxdesign > .intro > h3:before {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 48px;
-  height: 86px;
-  background-image: url(./../images/deocBlockTransparent.png);
-  content: "";
-}
-section#uxdesign > .intro > h3:after {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 180px;
-  width: 58px;
-  height: 156px;
-  background-image: url(./../images/decoBlockBlue.png);
-  content: "";
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .intro > h3:before, section#uxdesign > .intro > h3:after {
-    display: none;
-  }
-}
-section#uxdesign > .intro > p {
-  width: 664px;
-  margin: 0 auto 80px;
-  line-height: 30px;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .intro > p {
-    width: 90%;
-    margin-bottom: 30px;
-  }
-  section#uxdesign > .intro > p br {
-    display: none;
-  }
-}
-section#uxdesign > .intro > p > span {
-  display: block;
-  margin-bottom: 30px;
-}
-section#uxdesign > .intro > p > strong {
-  font-weight: 400;
-}
-section#uxdesign > .intro .bus-alarm {
-  display: flex;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .intro .bus-alarm {
-    flex-direction: column-reverse;
-  }
-}
-section#uxdesign > .intro .bus-alarm > h4 {
-  width: 43%;
-  align-self: flex-end;
-  text-align: right;
-  margin-right: 20px;
-  font-weight: 400;
-  font-size: 16px;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .intro .bus-alarm > h4 {
-    width: 100%;
-    margin-right: 0;
-    text-align: center;
-  }
-}
-section#uxdesign > .intro .bus-alarm > .frame {
-  width: 527px;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .intro .bus-alarm > .frame {
-    width: 90%;
-    margin: 0 auto 10px;
-  }
-}
-section#uxdesign > .intro .bus-alarm > .frame > img {
-  display: block;
-  width: 100%;
-}
-section#uxdesign > .uxui {
-  width: 1200px;
-  position: relative;
-  padding-bottom: 104px;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui {
-    width: 100%;
-  }
-}
-section#uxdesign > .uxui > h3 {
-  position: relative;
-  width: 330px;
-  margin: 0 auto 156px;
-  padding-bottom: 8px;
-  font-weight: 500;
-  font-size: 32px;
-  text-align: center;
-  border-bottom: 2px solid #f0f0f0;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > h3 {
-    margin-bottom: 50px;
-  }
-}
-section#uxdesign > .uxui > h3:before, section#uxdesign > .uxui > h3:after {
-  display: block;
-  position: absolute;
-  top: 130px;
-  color: #9578d2;
-  font-size: 36px;
-  font-weight: 800;
-  transition: ease-out 0.3s;
-}
-section#uxdesign > .uxui > h3:before {
-  left: 50%;
-  margin-left: -200px;
-  content: "UI";
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > h3:before {
-    top: 210px;
-    width: 40px;
-    margin-left: -20px;
-    font-size: 24px;
-    text-align: center;
-  }
-}
-section#uxdesign > .uxui > h3:after {
-  right: 50%;
-  margin-right: -200px;
-  content: "UX";
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > h3:after {
-    top: 520px;
-    width: 40px;
-    margin-right: -20px;
-    font-size: 24px;
-    text-align: center;
-  }
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container {
-    display: flex;
-    justify-content: center;
-  }
-}
-section#uxdesign > .uxui > .container > .uxui-case {
-  display: flex;
-  position: relative;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case {
-    display: flex;
-    flex-flow: column;
-    width: 40%;
-    height: initial;
-  }
-  section#uxdesign > .uxui > .container > .uxui-case:first-child {
-    margin-right: 30px;
-  }
-  section#uxdesign > .uxui > .container > .uxui-case:last-child {
-    margin-left: 30px;
-  }
-}
-section#uxdesign > .uxui > .container > .uxui-case > .ui-frame {
-  display: block;
-  position: absolute;
-  left: 50%;
-  width: 420px;
-  height: 280px;
-  margin-left: -420px;
-  transition: ease-out 0.3s;
-  z-index: 300;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case > .ui-frame {
-    order: 100;
-    position: initial;
-    width: 100%;
-    height: 150px;
-    margin: 0;
-  }
-}
-section#uxdesign > .uxui > .container > .uxui-case > .ui-frame > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 140px 0 0 140px;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case > .ui-frame > img {
-    border-radius: 150px 150px 0 0;
-  }
-}
-section#uxdesign > .uxui > .container > .uxui-case > .ux-frame {
-  display: block;
-  position: absolute;
-  right: 50%;
-  width: 420px;
-  height: 280px;
-  margin-right: -420px;
-  transition: ease-out 0.3s;
-  z-index: 300;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case > .ux-frame {
-    position: initial;
-    width: 100%;
-    height: 150px;
-    margin: 0;
-    order: 300;
-  }
-}
-section#uxdesign > .uxui > .container > .uxui-case > .ux-frame > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 140px 140px 0;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case > .ux-frame > img {
-    border-radius: 0 0 150px 150px;
-  }
-}
-section#uxdesign > .uxui > .container > .uxui-case:hover > .ui-frame {
-  left: 0;
-  margin-left: 0;
-  transition: ease-out 0.3s;
-}
-section#uxdesign > .uxui > .container > .uxui-case:hover > .ux-frame {
-  right: 0;
-  margin-right: 0;
-  transition: ease-out 0.3s;
-}
-section#uxdesign > .uxui > .container > .uxui-case > dl {
-  width: 40%;
-  height: 280px;
-  margin: 0 auto;
-  padding-top: 80px;
-  text-align: center;
-  background-color: #dbdbdb;
+section#personality > .container {
   box-sizing: border-box;
 }
+section#personality > .container > h2 {
+  font-size: 30px;
+  text-indent: 40px;
+}
+section#personality > .container > ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-width: 1200px;
+  max-width: 1200px;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
 @media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case > dl {
-    order: 200;
+  section#personality > .container > ul {
+    flex-flow: column wrap;
+    min-width: initial;
+  }
+}
+section#personality > .container > ul > li {
+  width: 410px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+section#personality > .container > ul > li:nth-child(2), section#personality > .container > ul > li:nth-child(4) {
+  margin-right: 0;
+}
+@media screen and (max-width:640px) {
+  section#personality > .container > ul > li {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
   }
 }
-section#uxdesign > .uxui > .container > .uxui-case > dl > dt {
-  color: #404040;
-  font-size: 22px;
-  font-weight: 600;
+section#personality > .container > ul > li > h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #9578d2;
 }
 @media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case > dl > dt {
-    font-size: 18px;
+  section#personality > .container > ul > li > h3 {
+    text-align: center;
   }
 }
-section#uxdesign > .uxui > .container > .uxui-case > dl > dd {
-  margin-top: 30px;
-  color: #404040;
-  font-size: 13px;
-  line-height: 24px;
+section#personality > .container > ul > li > p {
+  font-weight: 300;
+  line-height: 1.5;
 }
 @media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case > dl > dd br {
-    display: none;
+  section#personality > .container > ul > li > p {
+    text-align: center;
   }
 }
-section#uxdesign > .uxui > .container > .uxui-case:nth-of-type(2) {
-  margin-top: 30px;
-}
-@media screen and (max-width:640px) {
-  section#uxdesign > .uxui > .container > .uxui-case:nth-of-type(2) {
-    margin-top: initial;
-  }
+section#personality > .container > ul > li > p > span {
+  display: block;
 }
 
 section#portfolio > article {
@@ -1455,6 +789,7 @@ section#portfolio > article {
 }
 section#portfolio > .slides {
   position: relative;
+  margin-bottom: 150px;
 }
 @media screen and (max-width:640px) {
   section#portfolio > .slides {
@@ -1484,7 +819,7 @@ section#portfolio > .slides > .slides-pagination {
   }
 }
 section#portfolio > .slides > .slides-pagination > li {
-  width: 120px;
+  width: 140px;
 }
 @media screen and (max-width:640px) {
   section#portfolio > .slides > .slides-pagination > li {
@@ -1565,7 +900,7 @@ section#portfolio > .slides > .slides-container > figure > figcaption > .desc,
 section#portfolio > .slides > .slides-container > figure > figcaption > .tools,
 section#portfolio > .slides > .slides-container > figure > figcaption > .etc {
   margin-top: 20px;
-  color: #404040;
+  color: #666;
   font-weight: 400;
   line-height: 24px;
 }
@@ -1594,8 +929,8 @@ section#portfolio > .slides > .slides-container > figure > figcaption > .btn > a
   margin-top: 30px;
   font-weight: 400;
   font-size: 15px;
-  line-height: 38px;
-  letter-spacing: 2px;
+  line-height: 42px;
+  letter-spacing: 1px;
   text-align: center;
   color: #222;
   background-color: #dedede;
@@ -1613,7 +948,7 @@ section#portfolio > .slides > .slides-container > figure > figcaption > .btn > a
 }
 section#portfolio > .slides > .slides-container > figure > figcaption > .btn > a:hover {
   color: #fff;
-  background-color: #e6aad9;
+  background-color: #ae9dce;
 }
 section#portfolio > .slides > .slides-container > figure > figcaption > .shadow {
   display: none;
@@ -1645,7 +980,19 @@ section#portfolio > .slides > .slides-container > figure > figcaption > .shadow 
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: 370px 0 0 410px;
+  margin: 370px 0 0 405px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  color: #666;
+  font-family: "GmarketSansMedium";
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section#portfolio > .slides > .slides-container > figure > figcaption > .shadow > .clse:hover {
+  color: #fff;
+  background-color: #9578d2;
 }
 section#portfolio > .slides > .slides-container > figure > .frame {
   display: block;
@@ -1697,295 +1044,6 @@ section#portfolio > .slides > a.next {
     text-indent: -9999px;
   }
 }
-section#portfolio > .intro {
-  width: 100%;
-  background-image: url(./../images/portfolio/bg_pofol.png);
-  background-size: cover;
-}
-section#portfolio > .intro .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 80px 0;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container {
-    width: 100%;
-  }
-}
-section#portfolio > .intro .container > h3 {
-  position: relative;
-  margin-bottom: 56px;
-  font-size: 32px;
-  text-align: center;
-  font-weight: 500;
-}
-section#portfolio > .intro .container > h3:before {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 48px;
-  height: 86px;
-  background-image: url(./../images/deocBlockTransparent.png);
-  content: "";
-}
-section#portfolio > .intro .container > h3:after {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 180px;
-  width: 58px;
-  height: 156px;
-  background-image: url(./../images/decoBlockBlue.png);
-  content: "";
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > h3:before, section#portfolio > .intro .container > h3:after {
-    display: none;
-  }
-  section#portfolio > .intro .container > h3 > span {
-    display: block;
-  }
-}
-section#portfolio > .intro .container > p {
-  width: 664px;
-  margin: 0 auto 80px;
-  line-height: 30px;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > p {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-}
-section#portfolio > .intro .container > p > span {
-  display: block;
-  margin-bottom: 30px;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > p > span {
-    display: initial;
-  }
-  section#portfolio > .intro .container > p > span br {
-    display: none;
-  }
-}
-section#portfolio > .intro .container > p > strong {
-  font-weight: 400;
-}
-section#portfolio > .intro .container > .coding > h4 {
-  overflow: hidden;
-  position: relative;
-  height: 300px;
-  margin-bottom: 104px;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > h4 {
-    width: 90%;
-    margin: 0 auto 50px;
-    text-align: center;
-  }
-}
-section#portfolio > .intro .container > .coding > h4 > span {
-  position: absolute;
-  left: 240px;
-  bottom: 0;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > h4 > span {
-    left: 0;
-    bottom: -30px;
-    width: 100%;
-    text-align: center;
-  }
-}
-section#portfolio > .intro .container > .coding > h4:after {
-  display: block;
-  position: absolute;
-  right: 35px;
-  bottom: 0;
-  z-index: -1;
-  width: 470px;
-  height: 300px;
-  background-image: url(./../images/portfolio/code01.png);
-  content: "";
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > h4:after {
-    width: 100%;
-    right: 50%;
-    margin-right: -50%;
-  }
-}
-section#portfolio > .intro .container > .coding > h4 > .circle {
-  position: absolute;
-  left: 95%;
-  bottom: 0px;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring {
-  position: absolute;
-  border: 2px solid #9578d2;
-  border-radius: 200px;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_1 {
-  left: 0;
-  top: 0px;
-  width: 45px;
-  height: 45px;
-  opacity: 0.7;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_2 {
-  left: -16px;
-  top: -16px;
-  width: 77px;
-  height: 77px;
-  opacity: 0.6;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_3 {
-  left: -32px;
-  top: -32px;
-  width: 109px;
-  height: 109px;
-  opacity: 0.5;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_4 {
-  left: -48px;
-  top: -48px;
-  width: 141px;
-  height: 141px;
-  opacity: 0.4;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_5 {
-  left: -64px;
-  top: -64px;
-  width: 173px;
-  height: 173px;
-  opacity: 0.3;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_6 {
-  left: -80px;
-  top: -80px;
-  width: 205px;
-  height: 205px;
-  opacity: 0.2;
-}
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_7 {
-  left: -96px;
-  top: -96px;
-  width: 237px;
-  height: 237px;
-  opacity: 0.1;
-}
-section#portfolio > .intro .container > .coding > div {
-  position: relative;
-  height: 436px;
-  padding-left: 550px;
-  background-image: url(./../images/portfolio/code02.png);
-  background-position: 50px 0;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > div {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
-    padding: 0 0 460px;
-    background-position: 0 bottom;
-  }
-}
-section#portfolio > .intro .container > .coding > div > h4 {
-  padding: 30px 0;
-  font-size: 32px;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > div > h4 {
-    padding: 0 0 30px 0;
-    font-weight: 500;
-    font-size: 18px;
-  }
-}
-section#portfolio > .intro .container > .coding > div > p {
-  line-height: 30px;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > div > p {
-    line-height: 1.6;
-  }
-}
-section#portfolio > .intro .container > .coding > div > p > span {
-  display: block;
-  margin-bottom: 30px;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > div > p > span {
-    margin-bottom: 20px;
-  }
-}
-section#portfolio > .intro .container > .coding > div > .circle {
-  position: absolute;
-  left: 380px;
-  top: 40px;
-}
-@media screen and (max-width:640px) {
-  section#portfolio > .intro .container > .coding > div > .circle {
-    display: none;
-  }
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring {
-  position: absolute;
-  border: 2px solid #9578d2;
-  border-radius: 200px;
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_1 {
-  left: 0;
-  top: 0px;
-  width: 45px;
-  height: 45px;
-  opacity: 0.7;
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_2 {
-  left: -6px;
-  top: -6px;
-  width: 57px;
-  height: 57px;
-  opacity: 0.6;
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_3 {
-  left: -12px;
-  top: -12px;
-  width: 69px;
-  height: 69px;
-  opacity: 0.5;
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_4 {
-  left: -18px;
-  top: -18px;
-  width: 81px;
-  height: 81px;
-  opacity: 0.4;
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_5 {
-  left: -24px;
-  top: -24px;
-  width: 93px;
-  height: 93px;
-  opacity: 0.3;
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_6 {
-  left: -30px;
-  top: -30px;
-  width: 105px;
-  height: 105px;
-  opacity: 0.2;
-}
-section#portfolio > .intro .container > .coding > div > .circle > .ring.ring_7 {
-  left: -36px;
-  top: -36px;
-  width: 117px;
-  height: 117px;
-  opacity: 0.1;
-}
 section#portfolio > .works {
   position: relative;
 }
@@ -1995,7 +1053,7 @@ section#portfolio > .works > h3 {
   margin: 0 auto 56px;
   padding-bottom: 8px;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
   border-bottom: 2px solid #f0f0f0;
 }
@@ -2046,7 +1104,7 @@ section#portfolio > .works > .work-list > li > h4 + p {
 }
 section#portfolio > .works > .work-list > li > h4 + p > .tip {
   display: block;
-  color: #e6aad9;
+  color: #ae9dce;
   padding-top: 20px;
   font-weight: 600;
   text-align: center;
@@ -2068,10 +1126,31 @@ section#portfolio > .works > .work-list > li > .btnShow {
 section#portfolio > .works > .work-list > li > .btnShow:hover {
   box-shadow: inset 180px 0 0 0 #454249;
 }
+section#portfolio > .works > .work-list > li > .container {
+  display: flex;
+  justify-content: center;
+}
+section#portfolio > .works > .work-list > li > .container > .btnShow2 {
+  display: inline-block;
+  width: 150px;
+  height: 46px;
+  margin: 20px 10px 40px 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #9578d2;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 0 #454249;
+  transition: ease-out 0.3s;
+}
+section#portfolio > .works > .work-list > li > .container > .btnShow2:hover {
+  box-shadow: inset 180px 0 0 0 #454249;
+}
 section#portfolio > .works > .work-list > li > .frame {
   display: block;
   overflow: hidden;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
 }
 @media screen and (max-width:640px) {
   section#portfolio > .works > .work-list > li > .frame {
@@ -2093,7 +1172,7 @@ section#portfolio > .works > .work-list > li > .frame > a:hover > img {
 
 section#contact {
   width: 1200px;
-  margin: 0 auto 50px;
+  margin: 50px auto 50px;
 }
 @media screen and (max-width:640px) {
   section#contact {
@@ -2127,7 +1206,7 @@ section#contact > .apply > .help > h2 {
   position: absolute;
   left: 75px;
   top: 45px;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 500;
 }
 @media screen and (max-width:640px) {
@@ -2170,7 +1249,10 @@ section#contact > .apply > .help > p {
   }
 }
 section#contact > .apply > dl > dt.on {
-  background-color: #e6aad9;
+  background-color: #9578d2;
+}
+section#contact > .apply > dl > dt.on > a {
+  color: #fff;
 }
 section#contact > .apply > dl > dt.on > a > span.arr {
   background-image: url(./../images/contact/after_up.png);
@@ -2255,9 +1337,16 @@ footer > .working {
   border-top: 1px solid #aaa;
 }
 footer > .working > p {
+  width: 85%;
+  margin: 0 auto;
   padding-left: 7%;
   height: 80px;
   line-height: 80px;
+}
+@media screen and (max-width:640px) {
+  footer > .working > p {
+    width: 100%;
+  }
 }
 footer > .working > p > a {
   margin: 0 30px;
@@ -2266,16 +1355,18 @@ footer > .working > p > a:hover {
   text-decoration: underline;
 }
 footer > .info {
-  background-color: #222;
+  background-color: #7a5ac1;
 }
 footer > .info > .container {
+  width: 78%;
+  margin: 0 auto;
   position: relative;
   padding: 45px 7% 40px;
 }
 footer > .info > .container > h2,
 footer > .info > .container > p {
   margin-bottom: 15px;
-  color: #aaa;
+  color: #fff;
   font-size: 13px;
 }
 @media screen and (max-width:640px) {
@@ -2286,7 +1377,7 @@ footer > .info > .container > p {
 }
 footer > .info > .container > h2 > a,
 footer > .info > .container > p > a {
-  color: #aaa;
+  color: #fff;
 }
 footer > .info > .container > h2 > .bar,
 footer > .info > .container > p > .bar {
@@ -2295,12 +1386,13 @@ footer > .info > .container > p > .bar {
 footer > .info > .container > h2:after {
   display: block;
   position: absolute;
-  right: 7%;
-  top: 50%;
-  width: 53px;
-  height: 68px;
-  margin-top: -34px;
+  right: 5%;
+  top: 40%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
   background-image: url(./../images/footer_logo.png);
+  background-size: contain;
   content: "";
 }
 @media screen and (max-width:640px) {

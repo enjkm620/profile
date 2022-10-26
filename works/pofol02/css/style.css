@@ -219,7 +219,7 @@
   background-position: -172px -106px;
 }
 #wrap > .visual > .container > .pagination.next {
-  right: 10px;
+  right: 0;
   background-image: url(./../images/sp_seoul.png);
   background-position: -212px -106px;
 }
@@ -265,6 +265,21 @@
 #wrap > .info > .sub > ul > li:last-child {
   margin-right: 0;
 }
+#wrap > .info > .sub > ul > li:nth-child(1) > a {
+  background-image: url(./../images/info_01.png);
+}
+#wrap > .info > .sub > ul > li:nth-child(2) > a {
+  background-image: url(./../images/info_02.png);
+  padding-left: 20px;
+}
+#wrap > .info > .sub > ul > li:nth-child(3) > a {
+  background-image: url(./../images/info_03.png);
+  padding-left: 26px;
+}
+#wrap > .info > .sub > ul > li:nth-child(4) > a {
+  background-image: url(./../images/info_04.png);
+  padding-left: 20px;
+}
 #wrap > .info > .sub > ul > li > a {
   display: block;
   padding-left: 30px;
@@ -272,21 +287,6 @@
   font-size: 16px;
   background-repeat: no-repeat;
   background-size: contain;
-}
-#wrap > .info > .sub > ul > li > a:nth-child(1) {
-  background-image: url(./../images/info_01.png);
-}
-#wrap > .info > .sub > ul > li > a:nth-child(2) {
-  background-image: url(./../images/info_02.png);
-  padding-left: 20px;
-}
-#wrap > .info > .sub > ul > li > a:nth-child(3) {
-  background-image: url(./../images/info_03.png);
-  padding-left: 26px;
-}
-#wrap > .info > .sub > ul > li > a:nth-child(4) {
-  background-image: url(./../images/info_04.png);
-  padding-left: 20px;
 }
 #wrap > .info > .main {
   display: flex;

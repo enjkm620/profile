@@ -1,0 +1,16 @@
+<svg id="ico_calender_24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#2d2a26;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="stroke" transform="translate(3 2.5)">
+        <rect id="사각형_1579" data-name="사각형 1579" width="18" height="17" rx="1" transform="translate(0 2)" style="fill:none;stroke:#2d2a26;stroke-linecap:round"/>
+        <path id="선_1254" data-name="선 1254" class="cls-3" transform="translate(0 7)" d="M18 0H0"/>
+        <path id="선_1257" data-name="선 1257" class="cls-3" transform="translate(13)" d="M0 3V0"/>
+        <path id="선_1255" data-name="선 1255" class="cls-3" transform="translate(5)" d="M0 3V0"/>
+    </g>
+    <g id="ico_check_16" transform="translate(8 11)">
+        <path id="패스_2942" data-name="패스 2942" class="cls-3" d="M4.5 2.5H0V0" transform="rotate(-45 5.495 .155)"/>
+    </g>
+</svg>
