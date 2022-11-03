@@ -437,17 +437,19 @@ section#aboutme{
 
 
 section#skill{
+  width: 100%;
 
   >ol{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 1200px;
     margin: 0 auto;
 
     @media #{$mobile}{
       width: 100%;
+      margin: 0;
     }
 
     >li{
@@ -480,6 +482,10 @@ section#skill{
           &:nth-child(3){background-image:url(./../images/skill3.png);margin-right: 0;}
 
           @media #{$mobile}{
+            width: 120px;
+            height: 120px;
+            line-height: 190px;
+            font-size: 10px;
             margin-right: 10px;
 
             &:nth-child(3){margin-right: 0;}
@@ -509,6 +515,10 @@ section#skill{
           &:nth-child(3){background-image:url(./../images/skill6.png);margin-right: 0;}
 
           @media #{$mobile}{
+            width: 120px;
+            height: 120px;
+            line-height: 190px;
+            font-size: 10px;
             margin-right: 10px;
 
             &:nth-child(3){margin-right: 0;}

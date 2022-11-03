@@ -413,17 +413,21 @@ section#aboutme > .container > .info > ol {
   font-size: 13px;
 }
 
+section#skill {
+  width: 100%;
+}
 section#skill > ol {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 1200px;
   margin: 0 auto;
 }
 @media screen and (max-width:640px) {
   section#skill > ol {
     width: 100%;
+    margin: 0;
   }
 }
 section#skill > ol > li {
@@ -463,6 +467,10 @@ section#skill > ol > li > .web > li:nth-child(3) {
 }
 @media screen and (max-width:640px) {
   section#skill > ol > li > .web > li {
+    width: 120px;
+    height: 120px;
+    line-height: 190px;
+    font-size: 10px;
     margin-right: 10px;
   }
   section#skill > ol > li > .web > li:nth-child(3) {
@@ -500,6 +508,10 @@ section#skill > ol > li > .design > li:nth-child(3) {
 }
 @media screen and (max-width:640px) {
   section#skill > ol > li > .design > li {
+    width: 120px;
+    height: 120px;
+    line-height: 190px;
+    font-size: 10px;
     margin-right: 10px;
   }
   section#skill > ol > li > .design > li:nth-child(3) {
