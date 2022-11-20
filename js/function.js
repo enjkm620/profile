@@ -206,10 +206,10 @@ $(function(){
 $(function(){
 
     //페이드 슬라이드
-    const $slides = $('#portfolio .slides-container>figure');
-    const $indicator = $('#portfolio .slides-pagination>li>a');
-	const $btnNext = $('#portfolio .next');
-	const $btnPrev = $('#portfolio .prev');
+    const $slides = $('section#portfolio > .slides > .slides-container > figure');
+    const $indicator = $('section#portfolio > .slides > .slides-pagination > li > a');
+	const $btnNext = $('section#portfolio > .slides > a.next');
+	const $btnPrev = $('section#portfolio > .slides > a.prev');
 
     let nowIdx = 0;
     let oldIdx = nowIdx;
@@ -379,16 +379,60 @@ $(function(){
 });
 
 
-//contact 영역
+//디자인 포트폴리오 영역
 $(function(){
-    
-    const $tit = $("#contact .apply>dl>dt>a");
+	const $slides = $('section#portfolio > .works > .work-design > .slides > li');
+	const $indicators = $('section#portfolio > .works > .work-design > .slides-pagination > li > a');
+	const $btnPrev = $('section#portfolio > .works > .work-design > .pagination.prev');
+	const $btnNext = $('section#portfolio > .works > .work-design > .pagination.next');
 
-    $tit.on('click', function(evt){
-        evt.preventDefault();
-        $(this).parent().toggleClass('on').next().slideToggle(150);
-    });
+	let nowIdx = 0;
+	
+	//fade 공통함수
+	const fadeAction = function(){
+		$slides.eq(nowIdx)
+			.stop().animate({opacity:1},400)
+			.siblings().stop().animate({opacity:0},400);
+		$indicators.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
+	};
+
+	//indicator 클릭이벤트 구문
+	$indicators.on('click',function(evt){
+		evt.preventDefault();
+
+		nowIdx = $indicators.index(this);
+
+		fadeAction();
+	});
+
+	//이전 버튼 클릭이벤트 구문
+	$btnPrev.on('click', function(evt){
+		evt.preventDefault();
+
+		if(nowIdx>0){
+			nowIdx--;
+		}else{
+			nowIdx=3;
+		}
+
+		fadeAction();
+	});
+
+	//다음 버튼 클릭이벤트 구문
+	$btnNext.on('click', function(evt){
+		evt.preventDefault();
+
+		if(nowIdx<3){
+			nowIdx++;
+		}else{
+			nowIdx=0;
+		}
+
+		fadeAction();
+	});
+
 });
+
 
 //탑버튼
 $(function() {

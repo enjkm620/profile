@@ -158,32 +158,12 @@ $point-color-2 : #98BB2D;
             >.lan{
                 display: block;
                 position: absolute;
-                right: 100px;
+                right: 10px;
                 top: 22px;
 
                 color: $pri-color-2;
                 font-size: 16px;
             }//end of .lan
-
-            >.btn{
-                position: absolute;
-                right: 10px;
-                top: 16px;
-                width: 50px;
-                height: 36px;
-                margin: 0 auto;
-                cursor: pointer;
-
-                >.bar{
-                    display: block;
-                    width: 32px;
-                    height: 2px;
-                    margin: 0 auto 5px;
-                    background-color: $pri-color-2;
-
-                    &:nth-child(1){margin-top: 9px;}
-                }
-            }//end of .btn
         }//end of .container
     }//end of header
 

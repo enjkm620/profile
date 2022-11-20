@@ -51,6 +51,15 @@
         $indicators.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
     };
 
+    //indicator 클릭이벤트 구문
+    $indicators.on('click',function(evt){
+        evt.preventDefault();
+
+        nowIdx = $indicators.index(this);
+
+        fadeAction();
+    });
+
     //이전 버튼 클릭이벤트 구문
     $btnPrev.on('click', function(evt){
         evt.preventDefault();
