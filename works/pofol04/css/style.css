@@ -920,6 +920,7 @@
   left: 0;
   top: 0;
   width: 1200px;
+  opacity: 0;
 }
 @media screen and (max-width:640px) {
   #wrap > .calendar > .slides-container > .slides > li {
@@ -927,10 +928,7 @@
   }
 }
 #wrap > .calendar > .slides-container > .slides > li:nth-child(1) {
-  display: block;
-}
-#wrap > .calendar > .slides-container > .slides > li:nth-child(2), #wrap > .calendar > .slides-container > .slides > li:nth-child(3) {
-  display: none;
+  opacity: 1;
 }
 #wrap > .calendar > .slides-container > .slides > li:nth-child(1) > .frame {
   background-image: url(./../images/calendar-main01.png);
