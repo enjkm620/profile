@@ -239,8 +239,8 @@
     //fade 공통함수
     const fadeAction = function(){
         $slides.eq(nowIdx)
-            .stop().animate({opacity:1},600)
-            .siblings().stop().animate({opacity:0},600);
+            .stop().fadeIn(600)
+            .siblings().stop().fadeOut(600);
         $indicators.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
     };
 
