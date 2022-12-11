@@ -391,8 +391,8 @@ $(function(){
 	//fade 공통함수
 	const fadeAction = function(){
 		$slides.eq(nowIdx)
-			.stop().animate({opacity:1},400)
-			.siblings().stop().animate({opacity:0},400);
+			.stop().fadeIn(400)
+			.siblings().stop().fadeOut(400);
 		$indicators.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
 	};
 
