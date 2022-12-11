@@ -894,18 +894,20 @@ section#portfolio{
         >li{
             width: 120px;
 
-            &:nth-child(1){width: 130px;}
-            &:nth-child(3){width: 80px;}
-            &:nth-child(4){width: 160px;}
-            &:nth-child(5){width: 100px;}
+            &:nth-child(1){width: 80px;}
+            &:nth-child(2){width: 130px;}
+            &:nth-child(4){width: 70px;}
+            &:nth-child(5){width: 160px;}
+            &:nth-child(6){width: 90px;}
 
             @media #{$mobile}{
-              width: 16.666%;
+              width: 14.285%;
 
-              &:nth-child(1){width: 16.666%;}
-              &:nth-child(3){width: 16.666%;}
-              &:nth-child(4){width: 16.666%;}
-              &:nth-child(5){width: 16.666%;}
+              &:nth-child(1),
+              &:nth-child(2),
+              &:nth-child(4),
+              &:nth-child(5),
+              &:nth-child(6){width: 14.285%;}
             }
 
             >a{

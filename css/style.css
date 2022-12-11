@@ -857,32 +857,26 @@ section#portfolio > .slides > .slides-pagination > li {
   width: 120px;
 }
 section#portfolio > .slides > .slides-pagination > li:nth-child(1) {
-  width: 130px;
-}
-section#portfolio > .slides > .slides-pagination > li:nth-child(3) {
   width: 80px;
 }
+section#portfolio > .slides > .slides-pagination > li:nth-child(2) {
+  width: 130px;
+}
 section#portfolio > .slides > .slides-pagination > li:nth-child(4) {
-  width: 160px;
+  width: 70px;
 }
 section#portfolio > .slides > .slides-pagination > li:nth-child(5) {
-  width: 100px;
+  width: 160px;
+}
+section#portfolio > .slides > .slides-pagination > li:nth-child(6) {
+  width: 90px;
 }
 @media screen and (max-width:640px) {
   section#portfolio > .slides > .slides-pagination > li {
-    width: 16.666%;
+    width: 14.285%;
   }
-  section#portfolio > .slides > .slides-pagination > li:nth-child(1) {
-    width: 16.666%;
-  }
-  section#portfolio > .slides > .slides-pagination > li:nth-child(3) {
-    width: 16.666%;
-  }
-  section#portfolio > .slides > .slides-pagination > li:nth-child(4) {
-    width: 16.666%;
-  }
-  section#portfolio > .slides > .slides-pagination > li:nth-child(5) {
-    width: 16.666%;
+  section#portfolio > .slides > .slides-pagination > li:nth-child(1), section#portfolio > .slides > .slides-pagination > li:nth-child(2), section#portfolio > .slides > .slides-pagination > li:nth-child(4), section#portfolio > .slides > .slides-pagination > li:nth-child(5), section#portfolio > .slides > .slides-pagination > li:nth-child(6) {
+    width: 14.285%;
   }
 }
 section#portfolio > .slides > .slides-pagination > li > a {

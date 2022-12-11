@@ -2,7 +2,7 @@
 {
     const $gnb = $('#wrap > header > .container > nav > .gnb');
     const $lnbs = $('#wrap > header > .container > nav > .gnb > li > .lnb');
-    const $bg_lnb = $('#wrap > header > .bg_lnb');
+    const $bg_lnb = $('#wrap > header > .bg-lnb');
 
     const navFadeIn = function(){
         $bg_lnb.stop().fadeIn(100);

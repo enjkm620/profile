@@ -28,7 +28,7 @@ $point-color-2 : #98BB2D;
         position: relative;
         width: 100%;
 
-        >.snb_container{
+        >.snb-container{
             width: 100%;
             border-bottom: 1px solid $sec-color-2;
 
@@ -76,9 +76,9 @@ $point-color-2 : #98BB2D;
                     }//end of li
                 }//end of .snb
             }//end of .container
-        }//end of .snb_container
+        }//end of .snb-container
 
-        >.bg_lnb{
+        >.bg-lnb{
             display: none;
             position: absolute;
             top: 110px;
@@ -86,7 +86,7 @@ $point-color-2 : #98BB2D;
             height: 210px;
             background-color: #fff;
             z-index: 100;
-        }//end of .bg_lnb
+        }//end of .bg-lnb
 
         >.container{
             position: relative;

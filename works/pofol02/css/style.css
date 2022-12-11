@@ -12,17 +12,17 @@
   position: relative;
   width: 100%;
 }
-#wrap > header > .snb_container {
+#wrap > header > .snb-container {
   width: 100%;
   border-bottom: 1px solid #ddd;
 }
-#wrap > header > .snb_container > .container {
+#wrap > header > .snb-container > .container {
   position: relative;
   width: 1100px;
   height: 50px;
   margin: 0 auto;
 }
-#wrap > header > .snb_container > .container > .seoul {
+#wrap > header > .snb-container > .container > .seoul {
   position: absolute;
   top: 8px;
   display: block;
@@ -32,27 +32,27 @@
   background-image: url(./../images/sp_seoul.png);
   background-position: -5px -165px;
 }
-#wrap > header > .snb_container > .container > .notice {
+#wrap > header > .snb-container > .container > .notice {
   position: absolute;
   left: 180px;
   top: 18px;
   color: #575757;
   font-size: 14px;
 }
-#wrap > header > .snb_container > .container > .snb {
+#wrap > header > .snb-container > .container > .snb {
   display: flex;
   position: absolute;
   right: 0;
   top: 17px;
 }
-#wrap > header > .snb_container > .container > .snb > li {
+#wrap > header > .snb-container > .container > .snb > li {
   margin-left: 20px;
 }
-#wrap > header > .snb_container > .container > .snb > li > a {
+#wrap > header > .snb-container > .container > .snb > li > a {
   color: #575757;
   font-size: 15px;
 }
-#wrap > header > .bg_lnb {
+#wrap > header > .bg-lnb {
   display: none;
   position: absolute;
   top: 110px;
