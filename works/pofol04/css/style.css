@@ -926,11 +926,11 @@
     width: 100%;
   }
 }
-#wrap > .calendar > .slides-container > .slides > li:nth-child(2) {
-  opacity: 0;
+#wrap > .calendar > .slides-container > .slides > li:nth-child(1) {
+  display: block;
 }
-#wrap > .calendar > .slides-container > .slides > li:nth-child(3) {
-  opacity: 0;
+#wrap > .calendar > .slides-container > .slides > li:nth-child(2), #wrap > .calendar > .slides-container > .slides > li:nth-child(3) {
+  display: none;
 }
 #wrap > .calendar > .slides-container > .slides > li:nth-child(1) > .frame {
   background-image: url(./../images/calendar-main01.png);
