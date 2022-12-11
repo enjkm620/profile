@@ -1105,9 +1105,6 @@ section#portfolio > .slides > a.next {
     text-indent: -9999px;
   }
 }
-section#portfolio > .works {
-  position: relative;
-}
 section#portfolio > .works > h3 {
   position: relative;
   width: 250px;
@@ -1139,7 +1136,7 @@ section#portfolio > .works > .work-design > .slides {
   position: relative;
 }
 section#portfolio > .works > .work-design > .slides > li {
-  opacity: 0;
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -1148,7 +1145,7 @@ section#portfolio > .works > .work-design > .slides > li {
   background-position: 200px -100px;
 }
 section#portfolio > .works > .work-design > .slides > li:nth-child(1) {
-  opacity: 1;
+  display: block;
   background-image: url(./../images/portfolio/design01.png);
 }
 section#portfolio > .works > .work-design > .slides > li:nth-child(2) {
@@ -1172,21 +1169,21 @@ section#portfolio > .works > .work-design > .slides > li:nth-child(4) {
     background-position: 0px 150px;
   }
 }
-section#portfolio > .works > .work-design > .slides > li > a {
-  position: relative;
+section#portfolio > .works > .work-design > .slides > li > .tit > a {
   display: block;
+  position: relative;
   width: 400px;
 }
-section#portfolio > .works > .work-design > .slides > li > a > h4 {
+section#portfolio > .works > .work-design > .slides > li > .tit > a > h4 {
   display: inline-block;
   margin: 50px 0 0 50px;
   font-size: 28px;
   transition: ease-out 0.3s;
 }
-section#portfolio > .works > .work-design > .slides > li > a > h4:hover {
+section#portfolio > .works > .work-design > .slides > li > .tit > a > h4:hover {
   color: #7a5ac1;
 }
-section#portfolio > .works > .work-design > .slides > li > a > .view {
+section#portfolio > .works > .work-design > .slides > li > .tit > a > .view {
   display: inline-block;
   position: absolute;
   bottom: 7px;
@@ -1200,7 +1197,7 @@ section#portfolio > .works > .work-design > .slides > li > a > .view {
   background-color: #7a5ac1;
   transition: ease-out 0.3s;
 }
-section#portfolio > .works > .work-design > .slides > li > a > .view:hover {
+section#portfolio > .works > .work-design > .slides > li > .tit > a > .view:hover {
   box-shadow: inset 60px 0 0 0 #db98cd;
 }
 section#portfolio > .works > .work-design > .slides > li > p {
