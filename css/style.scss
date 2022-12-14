@@ -1114,13 +1114,21 @@ section#portfolio{
                   top: 27px;
                   width: 553px; 
                   
-                  
                   @media #{$mobile}{
                       left: 42px;
                       top: 18px;
                       width: 280px;
                     }
                 }
+
+                >.mobile{
+                  position: absolute;
+                  left: 540px;
+                  top: 80px;
+
+                  width: 150px;
+                  height: 300px;
+                }//end of .mobile
             }//end of .frame
         }//end of figure
     }//end of ..slides-container  

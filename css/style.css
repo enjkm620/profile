@@ -1084,6 +1084,13 @@ section#portfolio > .slides > .slides-container > figure > .frame > img {
     width: 280px;
   }
 }
+section#portfolio > .slides > .slides-container > figure > .frame > .mobile {
+  position: absolute;
+  left: 540px;
+  top: 80px;
+  width: 150px;
+  height: 300px;
+}
 section#portfolio > .slides > a {
   display: none;
   position: absolute;
