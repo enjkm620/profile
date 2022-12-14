@@ -436,28 +436,28 @@ $mobile : "screen and (max-width:640px)";
                                         font-size: 13px;
                                         text-align: center;
                                     }//end of .price
-
-                                    >button{
-                                        position: absolute;
-                                        left: 50%;
-                                        margin-top: 10px;
-                                        margin-left: -46px;
-
-                                        width: 94px;
-                                        height: 30px;
-                                        font-family: 'Noto Sans KR';
-                                        font-size: 13px;
-                                        letter-spacing: -0.5px;
-                                        border: 1px solid #000;
-                                        background: none;
-                                        // background-color: #eee;
-                                        
-                                        &:hover{
-                                            color: #fff;
-                                            background-color: $point-color-1;
-                                        }
-                                    }//end of button
                                 }//end of a
+
+                                >button{
+                                    position: absolute;
+                                    left: 50%;
+                                    margin-top: 10px;
+                                    margin-left: -46px;
+
+                                    width: 94px;
+                                    height: 30px;
+                                    font-family: 'Noto Sans KR';
+                                    font-size: 13px;
+                                    letter-spacing: -0.5px;
+                                    border: 1px solid #000;
+                                    background: none;
+                                    // background-color: #eee;
+                                    
+                                    &:hover{
+                                        color: #fff;
+                                        background-color: $point-color-1;
+                                    }
+                                }//end of button
 
                             }//end of &.img-area
 
@@ -678,6 +678,9 @@ $mobile : "screen and (max-width:640px)";
                 }
 
                 >li{
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
                     width: 25%;
                     margin-right: 20px;
                     // border: 1px solid red;
@@ -728,24 +731,23 @@ $mobile : "screen and (max-width:640px)";
                             margin: 20px auto;
                             font-size: 14px;
                         }//end of .price
-
-                        >button{
-                            width: 94px;
-                            height: 30px;
-                            font-family: 'Noto Sans KR';
-                            font-size: 13px;
-                            letter-spacing: -0.5px;
-                            border: 1px solid #000;
-                            background: none;
-                            // background-color: #eee;
-                            
-                            &:hover{
-                                color: #fff;
-                                background-color: $point-color-1;
-                            }
-                        }//end of button
-
                     }//end of a
+
+                    >button{
+                        width: 94px;
+                        height: 30px;
+                        font-family: 'Noto Sans KR';
+                        font-size: 13px;
+                        letter-spacing: -0.5px;
+                        border: 1px solid #000;
+                        background: none;
+                        // background-color: #eee;
+                        
+                        &:hover{
+                            color: #fff;
+                            background-color: $point-color-1;
+                        }
+                    }//end of button
                 }//end of li
 
             }//end of .slides
@@ -855,21 +857,21 @@ $mobile : "screen and (max-width:640px)";
                         font-size: 14px;
                         line-height: 1.5;
                     }//end of .desc
-
-                    >button{
-                        width: 140px;
-                        height: 40px;
-                        font-family: 'Noto Sans KR';
-                        font-size: 14px;
-                        letter-spacing: -0.5px;
-                        border: none;
-                        background-color: $point-color-3;
-                        
-                        &:hover{
-                            background-color: #FFDB4C;
-                        }
-                    }//end of button
                 }//end of a
+
+                >button{
+                    width: 140px;
+                    height: 40px;
+                    font-family: 'Noto Sans KR';
+                    font-size: 14px;
+                    letter-spacing: -0.5px;
+                    border: none;
+                    background-color: $point-color-3;
+                    
+                    &:hover{
+                        background-color: #FFDB4C;
+                    }
+                }//end of button
             }//end of li
         }//end of ul
     }//end of .collection
@@ -935,13 +937,13 @@ $mobile : "screen and (max-width:640px)";
                     top: 0;
 
                     width: 1200px;
+                    opacity: 0;
 
                     @media #{$mobile}{
                         width: 100%;
                     }
 
-                    &:nth-child(2){opacity: 0;}
-                    &:nth-child(3){opacity: 0;}
+                    &:nth-child(1){opacity: 1;}
 
                     &:nth-child(1)>.frame{background-image: url(./../images/calendar-main01.png);}
                     &:nth-child(2)>.frame{background-image: url(./../images/calendar-main02.png);}
@@ -988,6 +990,7 @@ $mobile : "screen and (max-width:640px)";
                     >.content{
                         display: flex;
                         flex-flow: column wrap;
+                        align-items: center;
                         
                         >a{
                             text-align: center;
@@ -1021,23 +1024,23 @@ $mobile : "screen and (max-width:640px)";
                                 margin: 10px 0 20px;
                                 font-size: 14px;
                             }//end of .price
-            
-                            >button{
-                                width: 120px;
-                                height: 40px;
-                                font-family: 'Noto Sans KR';
-                                font-size: 14px;
-                                letter-spacing: -0.5px;
-                                border: 1px solid #000;
-                                background: none;
-                                // background-color: #eee;
-                                
-                                &:hover{
-                                    color: #fff;
-                                    background-color: $point-color-1;
-                                }
-                            }//end of button
                         }//end of a
+
+                        >button{
+                            width: 120px;
+                            height: 40px;
+                            font-family: 'Noto Sans KR';
+                            font-size: 14px;
+                            letter-spacing: -0.5px;
+                            border: 1px solid #000;
+                            background: none;
+                            // background-color: #eee;
+                            
+                            &:hover{
+                                color: #fff;
+                                background-color: $point-color-1;
+                            }
+                        }//end of button
                     }//end of .content
                 }//end of li
             }//end of .slides
@@ -1146,6 +1149,10 @@ $mobile : "screen and (max-width:640px)";
             }
             
             >li{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                
                 width: 363px;
                 border: 1px solid #ccc;
 
@@ -1190,27 +1197,27 @@ $mobile : "screen and (max-width:640px)";
 
                         >span{display: block;}
                     }//end of .desc
-
-                    >button{
-                        margin: 50px 0 30px;
-                        width: 120px;
-                        height: 40px;
-                        font-family: 'Noto Sans KR';
-                        font-size: 14px;
-                        text-align: center;
-                        letter-spacing: -0.5px;
-                        border: none;
-                        background-color: $point-color-3;
-
-                        @media #{$mobile}{
-                            margin-top: 30px;
-                        }
-                        
-                        &:hover{
-                            background-color: #FFDB4C;
-                        }
-                    }//end of button
                 }//end of a
+
+                >button{
+                    margin: 50px 0 30px;
+                    width: 120px;
+                    height: 40px;
+                    font-family: 'Noto Sans KR';
+                    font-size: 14px;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    border: none;
+                    background-color: $point-color-3;
+
+                    @media #{$mobile}{
+                        margin-top: 30px;
+                    }
+                    
+                    &:hover{
+                        background-color: #FFDB4C;
+                    }
+                }//end of button
             }//end of li
         }//end of ul
     }//end of .promotion

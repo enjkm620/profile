@@ -433,7 +433,7 @@
   font-size: 13px;
   text-align: center;
 }
-#wrap > header > nav > .lnb > li > .lnb-category > li.img-area > a > button {
+#wrap > header > nav > .lnb > li > .lnb-category > li.img-area > button {
   position: absolute;
   left: 50%;
   margin-top: 10px;
@@ -446,7 +446,7 @@
   border: 1px solid #000;
   background: none;
 }
-#wrap > header > nav > .lnb > li > .lnb-category > li.img-area > a > button:hover {
+#wrap > header > nav > .lnb > li > .lnb-category > li.img-area > button:hover {
   color: #fff;
   background-color: #D4313A;
 }
@@ -666,6 +666,9 @@
   }
 }
 #wrap > .limited-gift > .slides-container > .slides > li {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   width: 25%;
   margin-right: 20px;
 }
@@ -733,7 +736,7 @@
   margin: 20px auto;
   font-size: 14px;
 }
-#wrap > .limited-gift > .slides-container > .slides > li > a > button {
+#wrap > .limited-gift > .slides-container > .slides > li > button {
   width: 94px;
   height: 30px;
   font-family: "Noto Sans KR";
@@ -742,7 +745,7 @@
   border: 1px solid #000;
   background: none;
 }
-#wrap > .limited-gift > .slides-container > .slides > li > a > button:hover {
+#wrap > .limited-gift > .slides-container > .slides > li > button:hover {
   color: #fff;
   background-color: #D4313A;
 }
@@ -847,7 +850,7 @@
   font-size: 14px;
   line-height: 1.5;
 }
-#wrap > .collection > ul > li > a > button {
+#wrap > .collection > ul > li > button {
   width: 140px;
   height: 40px;
   font-family: "Noto Sans KR";
@@ -856,7 +859,7 @@
   border: none;
   background-color: #FFD326;
 }
-#wrap > .collection > ul > li > a > button:hover {
+#wrap > .collection > ul > li > button:hover {
   background-color: #FFDB4C;
 }
 #wrap > .calendar {
@@ -920,17 +923,15 @@
   left: 0;
   top: 0;
   width: 1200px;
+  opacity: 0;
 }
 @media screen and (max-width:640px) {
   #wrap > .calendar > .slides-container > .slides > li {
     width: 100%;
   }
 }
-#wrap > .calendar > .slides-container > .slides > li:nth-child(2) {
-  opacity: 0;
-}
-#wrap > .calendar > .slides-container > .slides > li:nth-child(3) {
-  opacity: 0;
+#wrap > .calendar > .slides-container > .slides > li:nth-child(1) {
+  opacity: 1;
 }
 #wrap > .calendar > .slides-container > .slides > li:nth-child(1) > .frame {
   background-image: url(./../images/calendar-main01.png);
@@ -979,6 +980,7 @@
 #wrap > .calendar > .slides-container > .slides > li > .content {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
 }
 #wrap > .calendar > .slides-container > .slides > li > .content > a {
   text-align: center;
@@ -1013,7 +1015,7 @@
   margin: 10px 0 20px;
   font-size: 14px;
 }
-#wrap > .calendar > .slides-container > .slides > li > .content > a > button {
+#wrap > .calendar > .slides-container > .slides > li > .content > button {
   width: 120px;
   height: 40px;
   font-family: "Noto Sans KR";
@@ -1022,7 +1024,7 @@
   border: 1px solid #000;
   background: none;
 }
-#wrap > .calendar > .slides-container > .slides > li > .content > a > button:hover {
+#wrap > .calendar > .slides-container > .slides > li > .content > button:hover {
   color: #fff;
   background-color: #D4313A;
 }
@@ -1127,6 +1129,9 @@
   }
 }
 #wrap > .promotion > ul > li {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   width: 363px;
   border: 1px solid #ccc;
 }
@@ -1177,7 +1182,7 @@
 #wrap > .promotion > ul > li > a > .desc > span {
   display: block;
 }
-#wrap > .promotion > ul > li > a > button {
+#wrap > .promotion > ul > li > button {
   margin: 50px 0 30px;
   width: 120px;
   height: 40px;
@@ -1189,11 +1194,11 @@
   background-color: #FFD326;
 }
 @media screen and (max-width:640px) {
-  #wrap > .promotion > ul > li > a > button {
+  #wrap > .promotion > ul > li > button {
     margin-top: 30px;
   }
 }
-#wrap > .promotion > ul > li > a > button:hover {
+#wrap > .promotion > ul > li > button:hover {
   background-color: #FFDB4C;
 }
 #wrap > .location {
