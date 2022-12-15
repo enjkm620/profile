@@ -1,4 +1,9 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -37,7 +42,7 @@
   position: relative;
   min-width: 1200px;
   color: #666;
-  font-family: "GmarketSansMedium";
+  font-family: "Noto Sans KR";
   letter-spacing: -0.5px;
 }
 @media screen and (max-width:640px) {
@@ -213,11 +218,11 @@ header > .container > h2 {
   top: 50%;
   margin-top: -13px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   text-indent: 40px;
   background-image: url(./../images/logo.png);
   background-size: 12%;
-  background-position: 12px 0px;
+  background-position: 14px 6px;
   background-repeat: no-repeat;
 }
 @media screen and (max-width:640px) {
@@ -317,8 +322,9 @@ header > .container > nav > .gnb > li > a {
   padding: 0 15px;
   color: #666;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 12px;
+  letter-spacing: 0px;
   transition: all 0.2s;
 }
 @media screen and (max-width:640px) {
@@ -351,6 +357,7 @@ section#aboutme strong {
 }
 section#aboutme em {
   font-style: normal;
+  font-weight: 500;
   color: #ae9dce;
 }
 section#aboutme > .container {
@@ -434,8 +441,8 @@ section#skill > ol > li {
   margin-bottom: 30px;
 }
 section#skill > ol > li > h3 {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 500;
 }
 section#skill > ol > li > .web {
   display: flex;
@@ -590,7 +597,7 @@ section#ability > .container > .stick > .stick-container > .item > .category > h
   width: 180px;
   height: 40px;
   padding-right: 8%;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 6px;
   text-align: center;
@@ -789,7 +796,7 @@ section#personality > .container > ul > li > h3 {
   }
 }
 section#personality > .container > ul > li > p {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
 }
 @media screen and (max-width:640px) {
@@ -807,7 +814,7 @@ section#portfolio > h3 {
   margin: 0 auto 56px;
   padding-bottom: 8px;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 28px;
   text-align: center;
   border-bottom: 2px solid #f0f0f0;
 }
@@ -882,6 +889,7 @@ section#portfolio > .slides > .slides-pagination > li:nth-child(6) {
 section#portfolio > .slides > .slides-pagination > li > a {
   display: block;
   height: 40px;
+  color: #222;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
@@ -980,10 +988,9 @@ section#portfolio > .slides > .slides-container > figure > figcaption > .btn > a
   width: 132px;
   height: 40px;
   margin-top: 30px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   line-height: 42px;
-  letter-spacing: 1px;
   text-align: center;
   color: #222;
   background-color: #dedede;
@@ -1118,7 +1125,7 @@ section#portfolio > .works > h3 {
   margin: 0 auto 56px;
   padding-bottom: 8px;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 28px;
   text-align: center;
   border-bottom: 2px solid #f0f0f0;
 }
@@ -1193,7 +1200,7 @@ section#portfolio > .works > .work-design > .slides > li > .tit > a > h4:hover {
 section#portfolio > .works > .work-design > .slides > li > .tit > a > .view {
   display: inline-block;
   position: absolute;
-  bottom: 7px;
+  bottom: 5px;
   height: 20px;
   margin-left: 8px;
   padding: 5px 10px;
