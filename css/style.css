@@ -322,7 +322,7 @@ header > .container > nav > .gnb > li > a {
   padding: 0 15px;
   color: #666;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 12px;
   letter-spacing: 0px;
   transition: all 0.2s;
@@ -388,7 +388,7 @@ section#aboutme > .container > .info > .myself {
   margin-right: 30px;
   line-height: 22px;
   letter-spacing: -0.4px;
-  font-size: 14px;
+  font-size: 15px;
 }
 @media screen and (max-width:640px) {
   section#aboutme > .container > .info > .myself {
@@ -417,7 +417,7 @@ section#aboutme > .container > .info > .frame {
 }
 section#aboutme > .container > .info > ol {
   line-height: 28px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 section#skill {
@@ -483,6 +483,15 @@ section#skill > ol > li > .web > li:nth-child(3) {
   section#skill > ol > li > .web > li:nth-child(3) {
     margin-right: 0;
   }
+}
+section#skill > ol > li > p {
+  font-size: 15px;
+}
+section#skill > ol > li > p > strong {
+  color: #9578d2;
+}
+section#skill > ol > li > p > span > strong {
+  color: #db98cd;
 }
 section#skill > ol > li > .design {
   display: flex;
@@ -598,7 +607,7 @@ section#ability > .container > .stick > .stick-container > .item > .category > h
   height: 40px;
   padding-right: 8%;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 6px;
   text-align: center;
 }
@@ -764,7 +773,7 @@ section#personality > .container > ul {
   min-width: 1200px;
   max-width: 1200px;
   margin: 100px auto 0;
-  font-size: 14px;
+  font-size: 15px;
 }
 @media screen and (max-width:640px) {
   section#personality > .container > ul {
@@ -1363,7 +1372,7 @@ footer > .info > .container > h2,
 footer > .info > .container > p {
   margin-bottom: 15px;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
 }
 @media screen and (max-width:640px) {
   footer > .info > .container > h2,

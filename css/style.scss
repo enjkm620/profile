@@ -331,7 +331,7 @@ header{
             padding: 0 15px;
             color: #666;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 12px;
             letter-spacing: 0px;
             transition: all 0.2s;
@@ -408,7 +408,7 @@ section#aboutme{
           margin-right:30px;
           line-height:22px;
           letter-spacing:-0.4px;
-          font-size: 14px;
+          font-size: 15px;
 
           @media #{$mobile}{
             margin-right: 0;
@@ -438,7 +438,7 @@ section#aboutme{
       
       >ol{
           line-height:28px;
-          font-size: 13px;
+          font-size: 14px;
       }//end of ol
   }//end of .info
   }//end of .container
@@ -474,16 +474,16 @@ section#skill{
         justify-content:center;
 
         >li{
-          width:150px;
-          height:150px;
-          margin-right:20px;
-          font-size:12px;
-          text-align:center;
-          line-height:230px;
-          background-repeat:no-repeat;
-          background-position:center 30px;
-          background-size:50%;
-          border:1px solid #ccc;
+          width: 150px;
+          height: 150px;
+          margin-right: 20px;
+          font-size: 12px;
+          text-align: center;
+          line-height: 230px;
+          background-repeat: no-repeat;
+          background-position: center 30px;
+          background-size: 50%;
+          border: 1px solid #ccc;
           border-radius: 50%;
 
           &:nth-child(1){background-image:url(./../images/skill1.png);background-position:center 25px;}
@@ -501,6 +501,21 @@ section#skill{
           }
         }//end of li
       }//end of .web
+
+      >p{
+        font-size: 15px;
+
+        >strong{
+          color: $pri-color-2;
+        }//end of strong
+
+        >span{
+          >strong{
+            color: $point-color-1;
+          }
+        }//end of span
+
+      }//end of p
 
       >.design{
         display:flex;
@@ -615,7 +630,7 @@ section#ability{
                       height: 40px;
                       padding-right: 8%;
                       font-weight: 500;
-                      font-size: 14px;
+                      font-size: 15px;
                       line-height: 6px;
                       text-align: center;
   
@@ -798,7 +813,7 @@ section#personality{
         min-width: 1200px;
         max-width: 1200px;
         margin:100px auto 0;
-        font-size: 14px;
+        font-size: 15px;
 
         @media #{$mobile}{
           flex-flow: column wrap;
@@ -1446,7 +1461,7 @@ footer{
       >p{
         margin-bottom: 15px;
         color: #fff;
-        font-size: 13px;
+        font-size: 14px;
 
         @media #{$mobile}{
           margin-bottom: 10px;
