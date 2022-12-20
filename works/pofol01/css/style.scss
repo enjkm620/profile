@@ -20,6 +20,9 @@
     100%{opacity: 1;}
 }
 
+//문자열변수
+$mobile : "screen and (max-width:640px)";
+
 //컬러시스템
 $pri-color-1 : #351901;
 $pri-color-2 : #C7A87C;
@@ -43,12 +46,20 @@ a:active{color:$point-color-1;}
     color: $pri-color-3;
     letter-spacing: -1px;
 
+    @media #{$mobile}{
+        width: 100%;
+    }
+
     >header{
         position: fixed;
         width: 100%;
         margin-top: -140px;
         background-color: #fff;
         z-index: 100;
+
+        @media #{$mobile}{
+            margin-top: -140px;
+        }
 
         .container{
             position: relative;
@@ -57,7 +68,11 @@ a:active{color:$point-color-1;}
             margin: 0 auto;
             padding: 10px 0;
             box-sizing: border-box;
-            // border: 1px solid #000;
+
+            @media #{$mobile}{
+                width: 100%;
+                height: 180px;
+            }
 
             >.logo{
                 position: absolute;
@@ -69,26 +84,37 @@ a:active{color:$point-color-1;}
                 background-image: url(./../images/logo.png);
                 background-size: contain;
                 background-repeat: no-repeat;
+
+                @media #{$mobile}{
+                    left: 50%;
+                    top: 20px;
+                    margin-left: -80px;
+                }
                 
                 >a{
                     height: 105px;
                     display: block;
                     text-indent: -9999px;
                 }//end of a
-    
             }//end of .logo
     
             >.snb{
-                position: absolute;
-                right: 20px;
-                top: 50%;
-                margin-top: -8px;
-
-                width: 100px;
-
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-between;
+
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                
+                width: 100px;
+                margin-top: -8px;
+                
+                @media #{$mobile}{
+                    top: 20px;
+                    width: 90px;
+                }
+                
                 >li{
     
                     >a{
@@ -96,6 +122,10 @@ a:active{color:$point-color-1;}
                         color: $sec-color-1;
                         font-size: 14px;
                         letter-spacing: -1px;
+
+                        @media #{$mobile}{
+                            font-size: 13px;
+                        }
                     }//end of a
     
                 }//end of li
@@ -107,6 +137,13 @@ a:active{color:$point-color-1;}
                 left: 210px;
                 top: 50%;
                 margin-top: -14px;
+
+                @media #{$mobile}{
+                    left: 50%;
+                    top: 150px;
+                    margin-left: -43%;
+                    width: 100%;
+                }
     
                     >.gnb{
                         display: flex;
@@ -114,6 +151,10 @@ a:active{color:$point-color-1;}
                         justify-content: space-between;
                         width: 500px;
                         // border: 1px solid #000;
+
+                        @media #{$mobile}{
+                            width: 86%;
+                        }
     
                         >li{
                             
@@ -125,6 +166,10 @@ a:active{color:$point-color-1;}
                                 font-size: 18px;
                                 letter-spacing: -1px;
                                 line-height: 32px;
+
+                                @media #{$mobile}{
+                                    font-size: 16px;
+                                }
     
                             }//end of a
 
@@ -148,6 +193,10 @@ a:active{color:$point-color-1;}
 
             &:hover>.pagination{display: block;}
 
+            @media #{$mobile}{
+                height: 400px;
+            }
+
             >.slides{
 
                 >li{
@@ -160,6 +209,10 @@ a:active{color:$point-color-1;}
                     height: 650px;
                     background-size: cover;
                     background-repeat: no-repeat;
+
+                    @media #{$mobile}{
+                        height: 400px;
+                    }
 
                     &:nth-child(1){
                         opacity: 1;
@@ -229,14 +282,27 @@ a:active{color:$point-color-1;}
                 font-size: 16px;
                 letter-spacing: 2px;
 
+                @media #{$mobile}{
+                    bottom: 16px;
+                    font-size: 13px;
+                }
+
                 &.now{
                     right: 84px;
                     opacity: 0.9;
+
+                    @media #{$mobile}{
+                        right: 52px;
+                    }
                 }
 
                 &.total{
                     right: 40px;
                     opacity: 0.8;
+
+                    @media #{$mobile}{
+                        right: 16px;
+                    }
                 }
             }//end of .indicator
 
@@ -251,6 +317,10 @@ a:active{color:$point-color-1;}
                 background-image: url(./../images/sp_icon.png);
                 animation: fade 1s;
 
+                @media #{$mobile}{
+                    margin-top: -20px;
+                }
+
                 &.prev{
                     left: 0;
                     background-position: 0 -110px; left: 30px;
@@ -262,24 +332,29 @@ a:active{color:$point-color-1;}
                 }
 
             }//end of .pagination
-
         }//end of .slides-container
-
     }//end of .visual
 
     >.content{
-        // height: 1000px;
         
         >.intro{
             padding: 50px 0;
-            // background-color: $sec-color-4;
+            
+            @media #{$mobile}{
+                padding: 20px 0;
+            }
             
             >.container{
                 display: flex;
                 justify-content: center;
                 width: 1200px;
                 margin: 0 auto;
-                // border: 1px solid #000;
+
+                @media #{$mobile}{
+                    width: 100%;
+                    flex-flow: column wrap;
+                    align-items: center;
+                }
                 
                 >h3{
                     margin-right: 20px;
@@ -290,11 +365,17 @@ a:active{color:$point-color-1;}
                     font-size: 30px;
                     box-sizing: border-box;
 
+                    @media #{$mobile}{
+                        margin-right: 0;
+                        padding-bottom: 20px;
+                        text-align: center;
+                    }
+
                     >span{
                         display: block;
                         font-size: 18px;
                         text-indent: 3px;
-                    }
+                    }//end of span
                 }//end of h3
                 
                 >p{
@@ -304,15 +385,27 @@ a:active{color:$point-color-1;}
                     font-size: 16px;
                     line-height: 1.8;
                     border-left: 1px solid $pri-color-2;
+                    
+                    @media #{$mobile}{
+                        width: 100%;
+                        padding: 10px 20px 0;
+                        font-size: 15px;
+                        border-left: none;
+                        border-top: 1px solid $pri-color-2;
+                        box-sizing: border-box;
+                    }
                 }//end of p
-
             }//end of .container
-
         }//end of .intro
 
         >.notice{
             width: 1100px;
             margin: 60px auto 100px;
+
+            @media #{$mobile}{
+                width: 100%;
+                margin: 50px auto;
+            }
             
             >h3{
                 padding-bottom: 10px;
@@ -320,11 +413,22 @@ a:active{color:$point-color-1;}
                 font-size: 24px;
                 border-bottom: 1px solid $sec-color-4;
 
+                @media #{$mobile}{
+                    display: flex;
+                    flex-flow: column wrap;
+                    padding-left: 20px;
+                }
+
                 >span{
                     padding-left: 5px;
                     font-weight: 300;
                     font-size: 12px;
                     letter-spacing: 2px;
+
+                    @media #{$mobile}{
+                        margin-top: 4px;
+                        padding-left: 0;
+                    }
                 }//end of span
             }//end of h3
             
@@ -334,10 +438,18 @@ a:active{color:$point-color-1;}
                 margin-top: 20px;
                 text-align: center;
 
+                @media #{$mobile}{
+                    flex-flow: column nowrap;
+                }
+
                 >li{
                     font-size: 14px;
                     line-height: 20px;
                     color: $pri-color-3;
+
+                    @media #{$mobile}{
+                        &:first-child>.tit{margin-top: 0;}
+                    }
 
                     >span{display: block;}
 
@@ -345,6 +457,10 @@ a:active{color:$point-color-1;}
                         margin-bottom: 14px;
                         color: $point-color-2;
                         font-size: 18px;
+
+                        @media #{$mobile}{
+                            margin: 14px 0;
+                        }
                     }//end of .tit
     
                     >.desc{
@@ -360,6 +476,10 @@ a:active{color:$point-color-1;}
             width: 1100px;
             margin: 0 auto;
             height: 400px;
+
+            @media #{$mobile}{
+                width: 100%;
+            }
             
             >h3{
                 margin-bottom: 20px;
@@ -368,6 +488,11 @@ a:active{color:$point-color-1;}
                 font-weight: 500;
                 font-size: 24px;
                 border-bottom: 1px solid $sec-color-4;
+
+                @media #{$mobile}{
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                }
             }//end of h3
             
             >.slides-container{
@@ -375,6 +500,11 @@ a:active{color:$point-color-1;}
                 overflow: hidden;
                 width: 1100px;
                 height: 400px;
+
+                @media #{$mobile}{
+                    width: 100%;
+                    height: 500px;
+                }
                 
                 >ul{
                     display: flex;
@@ -385,6 +515,10 @@ a:active{color:$point-color-1;}
                     top: 0;
 
                     width: 2200px;
+
+                    @media #{$mobile}{
+                        width: 600%;
+                    }
 
                     >li{
                         margin-right: 20px;
@@ -399,10 +533,22 @@ a:active{color:$point-color-1;}
                         &:nth-child(5)>.frame{background-image: url(./../images/dessert5.jpeg);}
                         &:nth-child(6)>.frame{background-image: url(./../images/dessert6.jpeg);}
 
+                        @media #{$mobile}{
+                            width: 100%;
+                            margin-right: 0;
+                        }
+
                         >.frame{
                             width: 353px;
                             height: 235px;
                             text-indent: -9999px;
+
+                            @media #{$mobile}{
+                                width: 100%;
+                                height: 280px;
+                                background-size: cover;
+                                background-position: center center;
+                            }
                         }//end of .frame
 
                         >h4{
@@ -412,13 +558,21 @@ a:active{color:$point-color-1;}
                             font-weight: 400;
                             font-size: 20px;
                             border-top: 1px solid $sec-color-4;
+
+                            @media #{$mobile}{
+                                text-indent: 20px;
+                            }
                         }//end of h4
 
                         >.desc{
-                            font-size: 12px;
+                            font-size: 13px;
                             color: #555;
                             line-height: 16px;
                             letter-spacing: -0.5px;
+
+                            @media #{$mobile}{
+                                text-indent: 20px;
+                            }
 
                             >span{display: block;}
                         }//end of .desc
@@ -429,12 +583,13 @@ a:active{color:$point-color-1;}
                             color: $point-color-1;
                             font-size: 16px;
                             letter-spacing: normal;
+
+                            @media #{$mobile}{
+                                text-indent: 20px;
+                            }
                         }//end of .price
-
                     }//end of li
-
                 }//end of ul
-
             }//end of .slides-container
 
             >.pagination{
@@ -460,12 +615,20 @@ a:active{color:$point-color-1;}
                     left: -15px;
                     background-image: url(./../images/btn_prev.svg);
                     background-position-x: 2px;
+
+                    @media #{$mobile}{
+                        left: 20px;
+                    }
                 }//end of .prev
 
                 &.next{
                     right: -15px;
                     background-image: url(./../images/btn_next.svg);
                     background-position-x: 4px;
+
+                    @media #{$mobile}{
+                        right: 20px;
+                    }
                 }//end of .next
 
             }//end of .pagination
@@ -476,6 +639,10 @@ a:active{color:$point-color-1;}
             position: relative;  
             width: 1100px;
             margin: 100px auto 60px;
+
+            @media #{$mobile}{
+                width: 100%;
+            }
             
             >h3{
                 margin-bottom: 20px;
@@ -484,6 +651,11 @@ a:active{color:$point-color-1;}
                 font-weight: 500;
                 font-size: 24px;
                 border-bottom: 1px solid $sec-color-4;
+
+                @media #{$mobile}{
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                }
             }//end of h3
 
             >.slides-container{
@@ -491,6 +663,10 @@ a:active{color:$point-color-1;}
                 overflow: hidden;
                 width: 1100px;
                 height: 400px;
+
+                @media #{$mobile}{
+                    width: 100%;
+                }
 
                 >ul{
                     display: flex;
@@ -501,6 +677,10 @@ a:active{color:$point-color-1;}
                     top: 0;
 
                     width: 1825px;
+
+                    @media #{$mobile}{
+                        width: 500%;
+                    }
 
                     >li{
                         margin-right: 20px;
@@ -514,10 +694,22 @@ a:active{color:$point-color-1;}
                         &:nth-child(4)>.frame{background-image: url(./../images/tea4.jpeg);}
                         &:nth-child(5)>.frame{background-image: url(./../images/tea5.jpeg);}
 
+                        @media #{$mobile}{
+                            width: 100%;
+                            margin-right: 0;
+                        }
+
                         >.frame{
                             width: 353px;
                             height: 235px;
                             text-indent: -9999px;
+
+                            @media #{$mobile}{
+                                width: 100%;
+                                height: 280px;
+                                background-size: cover;
+                                background-position: center center;
+                            }
                         }//end of .frame
 
                         >h4{
@@ -527,13 +719,21 @@ a:active{color:$point-color-1;}
                             font-weight: 400;
                             font-size: 20px;
                             border-top: 1px solid $sec-color-4;
+
+                            @media #{$mobile}{
+                                text-indent: 20px;
+                            }
                         }//end of h4
 
                         >.desc{
-                            font-size: 12px;
+                            font-size: 13px;
                             color: #555;
                             line-height: 16px;
                             letter-spacing: -0.5px;
+
+                            @media #{$mobile}{
+                                text-indent: 20px;
+                            }
 
                             >span{display: block;}
                         }//end of .desc
@@ -544,6 +744,10 @@ a:active{color:$point-color-1;}
                             color: $point-color-1;
                             font-size: 16px;
                             letter-spacing: normal;
+
+                            @media #{$mobile}{
+                                text-indent: 20px;
+                            }
                         }//end of .price
 
                     }//end of li
@@ -559,7 +763,7 @@ a:active{color:$point-color-1;}
 
                 width: 30px;
                 height: 30px;
-                margin-top: -53px;
+                margin-top: -64px;
 
                 text-indent: -9999px;
                 background-color: $sec-color-1;
@@ -568,6 +772,10 @@ a:active{color:$point-color-1;}
                 background-position: center center;
                 border-radius: 50%;
 
+                @media #{$mobile}{
+                    margin-top: -84px;
+                }
+
                 &:hover{background-color: $point-color-2;}
 
                 &.prev{
@@ -575,12 +783,20 @@ a:active{color:$point-color-1;}
                     left: -15px;
                     background-image: url(./../images/btn_prev.svg);
                     background-position-x: 2px;
+
+                    @media #{$mobile}{
+                        left: 20px;
+                    }
                 }//end of .prev
 
                 &.next{
                     right: -15px;
                     background-image: url(./../images/btn_next.svg);
                     background-position-x: 4px;
+
+                    @media #{$mobile}{
+                        right: 20px;
+                    }
                 }//end of .next
 
             }//end of .pagination
@@ -590,6 +806,10 @@ a:active{color:$point-color-1;}
             position: relative;
             height: 600px;
 
+            @media #{$mobile}{
+                height: 750px;
+            }
+
             >h3{
                 width: 1100px;
                 margin: 0 auto 20px;
@@ -598,18 +818,32 @@ a:active{color:$point-color-1;}
                 font-weight: 500;
                 font-size: 24px;
                 border-bottom: 1px solid $sec-color-4;
+
+                @media #{$mobile}{
+                    width: 100%;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                }
             }//end of h3
 
             >.bg-box{
                 height: 200px;
                 background-color: $sec-color-4;
+
+                @media #{$mobile}{
+                    display: none;
+                }
             }//end of .bg-box
 
             >.main-container{
                 position: relative;
                 width: 1100px;
-                // height: 600px;
                 margin: 0 auto;
+
+                @media #{$mobile}{
+                    width: 100%;
+                    height: 700px;
+                }
 
                 >h4{
                     position: absolute;
@@ -619,6 +853,12 @@ a:active{color:$point-color-1;}
                     font-weight: 400;
                     font-size: 32px;
                     letter-spacing: -1px;
+
+                    @media #{$mobile}{
+                        top: 10px;
+                        left: 20px;
+                        font-size: 20px;
+                    }
                 }//end of h4
     
                 >p{
@@ -628,6 +868,12 @@ a:active{color:$point-color-1;}
                     color: $sec-color-2;
                     font-size: 16px;
                     text-indent: 2px;
+
+                    @media #{$mobile}{
+                        top: 40px;
+                        left: 20px;
+                        font-size: 14px;
+                    }
                 }//end of p
     
                 >.sub-container{
@@ -635,6 +881,17 @@ a:active{color:$point-color-1;}
                     width: 1100px;
                     margin: 0 auto;
                     margin-top: -170px;
+
+                    @media #{$mobile}{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+
+                        width: 100%;
+                        height: 600px;
+                        margin-top: 0;
+                        // border: 1px solid #000;
+                    }
                     
                     >.photo{
                         position: absolute;
@@ -647,6 +904,12 @@ a:active{color:$point-color-1;}
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-image: url(./../images/day1.jpeg);
+
+                        @media #{$mobile}{
+                            left: 5%;
+                            top: 80px;
+                            width: 90%;
+                        }
                     }//end of .photo
 
                     >.thmbs-container{
@@ -656,6 +919,15 @@ a:active{color:$point-color-1;}
                         height: 150px;
                         margin-top: 200px;
                         margin-left: 446px;
+
+                        @media #{$mobile}{
+                            position: absolute;
+                            bottom: -50px;
+
+                            width: 90%;
+                            margin-left: 5%;
+                            margin-top: 200px;
+                        }
                         
                     >.thmbs{
                         display: flex;
@@ -719,6 +991,11 @@ a:active{color:$point-color-1;}
                     background-repeat: no-repeat;
                     background-position: center center;
                     border-radius: 50%;
+
+                    @media #{$mobile}{
+                        top: 560px;
+                        margin-top: 0;
+                    }
     
                     &:hover{background-color: $point-color-1}
     
@@ -727,12 +1004,20 @@ a:active{color:$point-color-1;}
                         left: 430px;
                         background-image: url(./../images/btn_prev.svg);
                         background-position-x: 2px;
+
+                        @media #{$mobile}{
+                            left: 10px;
+                        }
                     }//end of .prev
     
                     &.next{
                         right: -20px;
                         background-image: url(./../images/btn_next.svg);
                         background-position-x: 4px;
+
+                        @media #{$mobile}{
+                            right: 10px;
+                        }
                     }//end of .next
     
                 }//end of .pagination
@@ -744,6 +1029,10 @@ a:active{color:$point-color-1;}
             width: 1100px;
             height: 400px;
             margin: 0 auto 100px;
+
+            @media #{$mobile}{
+                width: 100%;
+            }
             
             >h3{
                 margin-bottom: 20px;
@@ -752,11 +1041,22 @@ a:active{color:$point-color-1;}
                 font-weight: 500;
                 font-size: 24px;
                 border-bottom: 1px solid $sec-color-4;
+
+                @media #{$mobile}{
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                }
             }//end of h3
 
             >span{
                 font-weight: 400;
                 font-size: 18px;
+
+                @media #{$mobile}{
+                    display: block;
+                    margin-top: 20px;
+                    text-indent: 20px;
+                }
             }//end of span
 
             >h4{
@@ -764,6 +1064,11 @@ a:active{color:$point-color-1;}
                 color: $point-color-1;
                 font-weight: 400;
                 font-size: 20px;
+
+                @media #{$mobile}{
+                    text-indent: 10px;
+                    font-size: 16px;
+                }
 
                 >i{margin-right: 3px;}
             }//end of h4
@@ -787,6 +1092,10 @@ a:active{color:$point-color-1;}
                         margin-right: 5px;
                         font-size: 12px;
                     }
+
+                    @media #{$mobile}{
+                        right: 150px;
+                    }
                 }//end of .road
 
                 &.map{
@@ -795,6 +1104,10 @@ a:active{color:$point-color-1;}
                     >i{
                         margin-right: 5px;
                         font-size: 14px;
+                    }
+
+                    @media #{$mobile}{
+                        right: 20px;
                     }
                 }//end of .map
             }//end of a
@@ -808,9 +1121,17 @@ a:active{color:$point-color-1;}
                 padding-top: 30px;
                 border-top: 1px solid $sec-color-4;
 
+                @media #{$mobile}{
+                    flex-flow: column wrap;
+                }
+
                 >li{
                     font-size: 15px;
                     text-align: center;
+
+                    @media #{$mobile}{
+                        margin-bottom: 20px;
+                    }
 
                     >span{
                         display: block;
@@ -820,6 +1141,10 @@ a:active{color:$point-color-1;}
                         margin-bottom: 14px;
                         color: $point-color-2;
                         font-size: 18px;
+
+                        @media #{$mobile}{
+                            margin-bottom: 5px;
+                        }
                     }
 
                     >.tit~span{
@@ -843,11 +1168,19 @@ a:active{color:$point-color-1;}
         color: #fff;
         background-color: $pri-color-2;
 
+        @media #{$mobile}{
+            height: 200px;
+        }
+
         >.container{
             position: relative;
             width: 1100px;
             margin: 0 auto;
             padding-top: 30px;
+
+            @media #{$mobile}{
+                width: 100%;
+            }
 
             >.chf{
                 position: absolute;
@@ -859,6 +1192,11 @@ a:active{color:$point-color-1;}
                 text-indent: -9999px;
                 background-image: url(./../images/chf_logo.png);
                 background-size: cover;
+
+                @media #{$mobile}{
+                    left: 20px;
+                    top: 50px;
+                }
             }//end of .chf
 
             >.royal{
@@ -871,11 +1209,21 @@ a:active{color:$point-color-1;}
                 text-indent: -9999px;
                 background-image: url(./../images/royal_cha_logo.png);
                 background-size: cover;
+
+                @media #{$mobile}{
+                    left: 190px;
+                    top: 50px;
+                }
             }//end of .royal
 
             >address{
                 position: absolute;
                 top: 160px;
+
+                @media #{$mobile}{
+                    left: 20px;
+                    top: 130px;
+                }
                 >span{
                     display: block;
 
