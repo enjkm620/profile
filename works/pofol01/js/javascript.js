@@ -61,56 +61,154 @@
 
 }
 
-//dessert 이전 다음 슬라이드
+//dessert 메뉴 이전 다음 슬라이드
 {
     const $container = $('#wrap > .content > .mnu-dessert > .slides-container > ul');
     const $btnPrev = $('#wrap > .content > .mnu-dessert > .pagination.prev');
     const $btnNext = $('#wrap > .content > .mnu-dessert > .pagination.next');
 
-    //이전 버튼 클릭이벤트 구문
-    $btnPrev.on('click', function(evt){
-        evt.preventDefault();
+    let nowIdx = 0;
 
-        $container.stop().animate({left:0},600);
-        $btnPrev.hide();
-        $btnNext.show();
-    });
+    $(window).on('load resize', function(){
+        if(window.innerWidth>640){
+            //PC 모드 - 이전 버튼 클릭이벤트 구문
+            $btnPrev.on('click', function(evt){
+                evt.preventDefault();
 
+                nowIdx--;
 
-    //다음 버튼 클릭이벤트 구문
-    $btnNext.on('click', function(evt){
-        evt.preventDefault();
+                if(nowIdx<2){
+                    $container.stop().animate({left:0},600);
+                    $btnPrev.hide();
+                    $btnNext.show();
+                }
+            });
 
-        $container.stop().animate({left:-1100},600);
-        $btnNext.hide();
-        $btnPrev.show();
+            //PC 모드 - 다음 버튼 클릭이벤트 구문
+            $btnNext.on('click', function(evt){
+                evt.preventDefault();
+                
+                nowIdx++;
+                
+                if(nowIdx<2){
+                    $container.stop().animate({left:-1100},600);
+                    $btnNext.hide();
+                    $btnPrev.show();
+                }
+                
+                console.log(nowIdx);
+
+            });
+
+        } else {
+            //모바일 모드 - 이전 버튼 클릭이벤트 구문
+            $btnPrev.on('click', function(evt){
+                evt.preventDefault();
+        
+                nowIdx--;
+                console.log(nowIdx);
+                
+                if(nowIdx>0){
+                    $container.stop().animate({left:-100*nowIdx+'%'},600);
+                    $btnNext.show();
+                } else if(nowIdx=1){
+                    $container.stop().animate({left:0},600);
+                    $btnPrev.hide();
+                }
+            });
+
+            //모바일 모드 - 다음 버튼 클릭이벤트 구문
+            $btnNext.on('click', function(evt){
+                evt.preventDefault();
+                
+                nowIdx++;
+                console.log(nowIdx);
+                
+                if(nowIdx<5){
+                    $container.stop().animate({left:-100*nowIdx+'%'},600);
+                    $btnPrev.show();
+                } else if(nowIdx=5){
+                    $container.stop().animate({left:-100*nowIdx+'%'},600);
+                    $btnNext.hide();
+                }
+            });
+        }
     });
 }
 
-//tea 이전 다음 슬라이드
+//tea 메뉴 이전 다음 슬라이드
 {
     const $container = $('#wrap > .content > .mnu-tea > .slides-container > ul');
     const $btnPrev = $('#wrap > .content > .mnu-tea > .pagination.prev');
     const $btnNext = $('#wrap > .content > .mnu-tea > .pagination.next');
 
-    //이전 버튼 클릭이벤트 구문
-    $btnPrev.on('click', function(evt){
-        evt.preventDefault();
+    let nowIdx = 0;
 
-        $container.stop().animate({left:0},400);
-        $btnPrev.hide();
-        $btnNext.show();
-    });
+    $(window).on('load resize', function(){
+        if(window.innerWidth>640){
+            //PC 모드 - 이전 버튼 클릭이벤트 구문
+            $btnPrev.on('click', function(evt){
+                evt.preventDefault();
 
+                nowIdx--;
 
-    //다음 버튼 클릭이벤트 구문
-    $btnNext.on('click', function(evt){
-        evt.preventDefault();
+                if(nowIdx<2){
+                    $container.stop().animate({left:0},600);
+                    $btnPrev.hide();
+                    $btnNext.show();
+                }
+            });
 
-        $container.stop().animate({left:-746},400);
-        $container.children('li:nth-child(3)').css({marginRight:20});
-        $btnNext.hide();
-        $btnPrev.show();
+            //PC 모드 - 다음 버튼 클릭이벤트 구문
+            $btnNext.on('click', function(evt){
+                evt.preventDefault();
+                
+                nowIdx++;
+                
+                if(nowIdx<2){
+                    $container.stop().animate({left:-746},400);
+                    $container.children('li:nth-child(3)').css({marginRight:20});
+                    $btnNext.hide();
+                    $btnPrev.show();
+                }
+                
+                console.log(nowIdx);
+
+            });
+
+        } else {
+            //모바일 모드 - 이전 버튼 클릭이벤트 구문
+            $btnPrev.on('click', function(evt){
+                evt.preventDefault();
+        
+                nowIdx--;
+                console.log(nowIdx);
+                
+                if(nowIdx>0){
+                    $container.stop().animate({left:-100*nowIdx+'%'},600);
+                    $btnNext.show();
+                } else if(nowIdx=1){
+                    $container.stop().animate({left:0},600);
+                    $btnPrev.hide();
+                }
+            });
+
+            //모바일 모드 - 다음 버튼 클릭이벤트 구문
+            $btnNext.on('click', function(evt){
+                evt.preventDefault();
+                
+                nowIdx++;
+                console.log(nowIdx);
+                
+                if(nowIdx<4){
+                    $container.stop().animate({left:-100*nowIdx+'%'},600);
+                    $btnPrev.show();
+                } else if(nowIdx=4){
+                    $container.stop().animate({left:-100*nowIdx+'%'},600);
+                    $btnNext.hide();
+                }
+            });
+        }
     });
 }
 
