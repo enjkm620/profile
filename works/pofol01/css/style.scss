@@ -48,6 +48,7 @@ a:active{color:$point-color-1;}
 
     @media #{$mobile}{
         width: 100%;
+        // overflow-x: hidden;
     }
 
     >header{
@@ -807,6 +808,7 @@ a:active{color:$point-color-1;}
             height: 600px;
 
             @media #{$mobile}{
+                width: 100%;
                 height: 750px;
             }
 
@@ -823,6 +825,7 @@ a:active{color:$point-color-1;}
                     width: 100%;
                     padding-left: 20px;
                     margin-bottom: 10px;
+                    box-sizing: border-box;
                 }
             }//end of h3
 
@@ -870,8 +873,8 @@ a:active{color:$point-color-1;}
                     text-indent: 2px;
 
                     @media #{$mobile}{
-                        top: 40px;
                         left: 20px;
+                        top: 40px;
                         font-size: 14px;
                     }
                 }//end of p
@@ -890,7 +893,6 @@ a:active{color:$point-color-1;}
                         width: 100%;
                         height: 600px;
                         margin-top: 0;
-                        // border: 1px solid #000;
                     }
                     
                     >.photo{
